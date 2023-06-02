@@ -1,0 +1,2 @@
+# RustTemplate
+Rust Template
