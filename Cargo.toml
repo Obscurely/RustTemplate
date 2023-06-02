@@ -1,0 +1,50 @@
+[package]
+name = "CHANGEME"
+authors = ["Obscurely <adrian.obscurely@protonmail.com>"]
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.69" # Minimum rust version
+description = "CHANGEME"
+documentation = "https://github.com/Obscurely/CHANGEME/blob/master/README.md"
+repository = "https://github.com/Obscurely/CHANGEME"
+homepage = "https://github.com/Obscurely/CHANGEME"
+categories = [] # CHANGEME
+keywords = [] # CHANGEME
+readme = "README.md"
+license = "MIT"
+
+[package.metadata.deb]
+maintainer = "Obscurely <adrian.obscurely@protonmail.com>"
+copyright = "2023, 2023 <adrian.obscurely@protonmail.com>"
+license-file = ["LICENSE", "0"]
+extended-description = """\
+CHANGEME""""
+depends = "$auto"
+section = "CHANGEME"
+
+[profile.release]
+strip = true      # Automatically strip symbols from the binary.
+opt-level = 3     # Optimize for speed.
+lto = true        # instructs the linker to optimize at the link stage
+codegen-units = 1 # Default is 16, the higher the faster compile time, but it may produce slower code.
+panic = "abort"   # Since all of the errors are  handled manually (should be), aborting and removing the panic code is nothing, but an improvement.
+
+[dependencies]
+# Great examples include:
+#   - rand (togheter with rand_hc for cryptography)
+#   - serde and serde_json
+#   - reqwest
+#   - tokio
+#   - regex
+#   - clap (fully-featured args parsing), pico-args (minimal args parsing)
+#   - chrono (date and time)
+#   - tempfile
+#   - dirs
+#   - indexmap
+#   - thiserror and thiserror (for error handling)
+#   - tracing (logging)
+#   - walkdir (recursively read a directory)
+#   - rayon (using .par_iter() it makes iters run in parallel)
+#   - slint (ui framework)
+#   - sled (high performance, written in rust, db)
+#   - itertools (for when extra iterator methods are needed)
