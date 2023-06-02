@@ -3,9 +3,9 @@
 <!--toc:start-->
 
 - [Security](#security)
-  - [Reporting Security Issues](#reporting-security-issues)
-  - [Preferred Languages](#preferred-languages)
-  - [Policy](#policy)
+- [Reporting Security Issues](#reporting-security-issues)
+- [Preferred Languages](#preferred-languages)
+- [Policy](#policy)
 
 <!--toc:end-->
 
