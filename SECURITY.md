@@ -1,5 +1,14 @@
 # Security
 
+<!--toc:start-->
+
+- [Security](#security)
+  - [Reporting Security Issues](#reporting-security-issues)
+  - [Preferred Languages](#preferred-languages)
+  - [Policy](#policy)
+
+<!--toc:end-->
+
 Computer security, cybersecurity (cyber security), digital security or
 information technology security (IT security) is the protection of computer
 systems and networks from attack by malicious actors that may result in

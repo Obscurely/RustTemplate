@@ -1,5 +1,19 @@
 # Contributing
 
+<!--toc:start-->
+
+- [Contributing](#contributing)
+  - [Pull Request Process](#pull-request-process)
+  - [Code of Conduct](#code-of-conduct)
+    - [Our Pledge](#our-pledge)
+    - [Our Standards](#our-standards)
+    - [Our Responsibilities](#our-responsibilities)
+    - [Scope](#scope)
+    - [Enforcement](#enforcement)
+    - [Attribution](#attribution)
+
+<!--toc:end-->
+
 When contributing to this repository, please first discuss the change you wish
 to make via issue, email, or any other method with the owners of this repository
 before making a change.
@@ -80,9 +94,8 @@ Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported by contacting the project team at `adrian.obscurely@protonmail.com`.
 All complaints will be reviewed and investigated and will result in a response
 that is deemed necessary and appropriate to the circumstances. The project team
-is obligated to maintain confidentiality with the reporter of an
-incident. Further details of specific enforcement policies may be posted
-separately.
+is obligated to maintain confidentiality with the reporter of an incident.
+Further details of specific enforcement policies may be posted separately.
 
 Project maintainers who do not follow or enforce the Code of Conduct in good
 faith may face temporary or permanent repercussions as determined by other
