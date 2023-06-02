@@ -3,14 +3,14 @@
 <!--toc:start-->
 
 - [Contributing](#contributing)
-- [Pull Request Process](#pull-request-process)
-- [Code of Conduct](#code-of-conduct)
-- [Our Pledge](#our-pledge)
-- [Our Standards](#our-standards)
-- [Our Responsibilities](#our-responsibilities)
-- [Scope](#scope)
-- [Enforcement](#enforcement)
-- [Attribution](#attribution)
+  - [Pull Request Process](#pull-request-process)
+  - [Code of Conduct](#code-of-conduct)
+    - [Our Pledge](#our-pledge)
+    - [Our Standards](#our-standards)
+    - [Our Responsibilities](#our-responsibilities)
+    - [Scope](#scope)
+    - [Enforcement](#enforcement)
+    - [Attribution](#attribution)
 
 <!--toc:end-->
 
