@@ -8,7 +8,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <img src="assets/logo.png" alt="Logo" width="150" height="150">
+  <img src="assets/images/logo.png" alt="Logo" width="150" height="150">
 
 <h1 align="center"></h1>
 

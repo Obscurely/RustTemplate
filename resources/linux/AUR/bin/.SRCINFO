@@ -1,0 +1,14 @@
+pkgbase = CHANGEME_BIN-bin
+	pkgdesc = CHANGEME_DESC
+	pkgver = PKGVER-PLACEHOLDER
+	pkgrel = 1
+	url = https://github.com/Obscurely/CHANGEME_NAME
+	arch = x86_64
+	license = MIT
+	provides = CHANGEME_BIN-bin
+	conflicts = CHANGEME_BIN
+	conflicts = CHANGEME_BIN-git
+	source = https://github.com/Obscurely/CHANGEME_NAME/releases/download/vPKGVER-PLACEHOLDER-stable/CHANGEME_BIN-linux.tar.gz
+	sha256sums = SHA-PLACEHOLDER
+
+pkgname = CHANGEME_BIN-bin
