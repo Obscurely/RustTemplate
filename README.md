@@ -4,6 +4,7 @@
 [![Forks][forks-shield]][forks-url] [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
+[![Crates.io][crates-shield]][crates-url]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -483,3 +484,5 @@ this email adddress if you have more to say:
 [issues-url]: https://github.com/Obscurely/CHANGEME_NAME/issues
 [license-shield]: https://img.shields.io/github/license/Obscurely/CHANGEME_NAME.svg?style=for-the-badge
 [license-url]: https://github.com/Obscurely/CHANGEME_NAME/blob/master/LICENSE
+[crates-shield]: https://img.shields.io/crates/v/CHANGEME_BIN.svg?style=for-the-badge
+[crates-url]: https://crates.io/crates/CHANGEME_BIN
