@@ -13,11 +13,11 @@
 <h1 align="center"></h1>
 
 <p align="center">
-    CHANGEME(short description)
+    CHANGEME_DESC
     <p>
-        <a href="https://github.com/Obscurely/CHANGEME/issues">Report Bug</a>
+        <a href="https://github.com/Obscurely/CHANGEME_NAME/issues">Report Bug</a>
         |
-        <a href="https://github.com/Obscurely/CHANGEME/issues">Request Feature</a>
+        <a href="https://github.com/Obscurely/CHANGEME_NAME/issues">Request Feature</a>
     </p>
   </p>
 </div>
@@ -84,11 +84,11 @@
 
 ## 🪽 About The Project
 
-- CHANGEME(in-depth description)
+CHANGEME_MANUAL
 
 ### 🎥 Video showcase
 
-[Showcase](CHANGEME) <!-- Showcase video uploaded to github -->
+[Showcase](CHANGEME_MANUAL) <!-- Showcase video uploaded to github -->
 
 ### 🍔 Built with
 
@@ -96,7 +96,7 @@
 
 #### The stock libraries and these awesome 3rd party ones
 
-- CHANGEME
+- CHANGEME_MANUAL
 
 ## 🏁 Getting Started
 
@@ -116,22 +116,23 @@
 
 #### Portable EXE
 
-1. Go to the [Releases Tab](https://github.com/Obscurely/CHANGEME/releases) and
-   download the _CHANGEME-windows.exe_ file (might have to click show all).
+1. Go to the [Releases Tab](https://github.com/Obscurely/CHANGEME_NAME/releases)
+   and download the _CHANGEME_BIN-windows.exe_ file (might have to click show
+   all).
 1. Double click the exe you just downloaded and there you go the program works.
 1. Might wanna take a look at the [Usage Tab](#🪧-usage) if you don't understand
    something about it.
 
 #### Installer
 
-1. Go to the [Releases Tab](https://github.com/Obscurely/CHANGEME/releases) and
-   download the _CHANGEME-windows-installer.exe_ file (might have to click show
-   all).
+1. Go to the [Releases Tab](https://github.com/Obscurely/CHANGEME_NAME/releases)
+   and download the _CHANGEME_BIN-windows-installer.exe_ file (might have to
+   click show all).
 1. Double click the installer and go through it as you would with any other
    installer.
 1. If you look now in the start menu (or on the desktop if you ticked create
-   desktop shortcut) you are gonna see a shortcut for CHANGEME, just run it like
-   any other program.
+   desktop shortcut) you are gonna see a shortcut for CHANGEME_NAME, just run it
+   like any other program.
 1. Might wanna take a look at the [Usage Tab](#🪧-usage) if you don't understand
    something about it.
 
@@ -148,16 +149,16 @@
 
 #### Portable Bin
 
-1. Go to the [Releases Tab](https://github.com/Obscurely/CHANGEME/releases) and
-   download the _CHANGEME-linux_ file.
+1. Go to the [Releases Tab](https://github.com/Obscurely/CHANGEME_NAME/releases)
+   and download the _CHANGEME_BIN-linux_ file.
 1. Double click the bin you just downloaded and there you go the program works.
 1. Might wanna take a look at the [Usage Tab](#🪧-usage) if you don't understand
    something about it.
 
 #### AppImage
 
-1. Go to the [Releases Tab](https://github.com/Obscurely/CHANGEME/releases) and
-   download the _CHANGEME-linux.AppImage_ file.
+1. Go to the [Releases Tab](https://github.com/Obscurely/CHANGEME_NAME/releases)
+   and download the _CHANGEME_BIN-linux.AppImage_ file.
 1. Double click the AppImage you download and there you go the program just
    works. You may want to install
    [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher) if you
@@ -171,9 +172,9 @@
 
 The PKGs are:
 
-- CHANGEME (for stable)
-- CHANGEME-bin (for precompiled)
-- CHANGEME-git (to compile from the latest source code commit)
+- CHANGEME_BIN (for stable)
+- CHANGEME_BIN-bin (for precompiled)
+- CHANGEME_BIN-git (to compile from the latest source code commit)
 
 a. if you have an AUR manager (like
 [paru](https://github.com/Morganamilo/paru/blob/master/README.md#installation)
@@ -183,11 +184,11 @@ you should)
 1. Just like with any other AUR pkg choose your prefered type and you can run
    the following command for example.
 
-    ```shell
-    paru -Sy CHANGEME
-    ```
+   ```shell
+   paru -Sy CHANGEME_BIN
+   ```
 
-1. Search for CHANGEME in your app launcher and launch it.
+1. Search for CHANGEME_NAME in your app launcher and launch it.
 1. Might wanna take a look at the [Usage Tab](#🪧-usage) if you don't understand
    something about it.
 
@@ -195,35 +196,35 @@ b. Manually cloning and building it from AUR
 
 1. First install the basic build dependencies, if you don't already have them:
 
-    ```shell
-    sudo pacman -Sy gcc base-devel --needed
-    ```
+   ```shell
+   sudo pacman -Sy gcc base-devel --needed
+   ```
 
 1. Then clone the build script
 
-    ```shell
-    git clone https://aur.archlinux.org/CHANGEME.git # or CHANGEME-bin & CHANGEME-git
-    ```
+   ```shell
+   git clone https://aur.archlinux.org/CHANGEME_BIN.git # or CHANGEME_BIN-bin & CHANGEME_BIN-git
+   ```
 
 1. Cd into the new cloned repository and run the following to build the package
 
-    ```shell
-    makepkg
-    ```
+   ```shell
+   makepkg
+   ```
 
 1. In order to install the package run the following (where \* is just an any
    other characters place holder)
 
-    ```shell
-    sudo pacman -U CHANGEME-*.pkg.tar.zst
-    ```
+   ```shell
+   sudo pacman -U CHANGEME_BIN-*.pkg.tar.zst
+   ```
 
 #### Nix File
 
 You are using NixOS, don't worry I got you bro.
 
-1. Go to the [Releases Tab](https://github.com/Obscurely/CHANGEME/releases) and
-   download the _CHANGEME-linux.nix_ file.
+1. Go to the [Releases Tab](https://github.com/Obscurely/CHANGEME_NAME/releases)
+   and download the _CHANGEME_BIN-linux.nix_ file.
 1. If you use flakes then put it in your pkgs folder, and up-top add your tag
    (like _my_). If you don't just add the code in your default.nix file and
    install it this way.
@@ -236,33 +237,33 @@ You should use the app image. This does not provide a desktop file, you'll have
 to run it from the command line. It's here just as another means if needed. I
 will try to make a ppa eventually.
 
-1. Go to the [Releases Tab](https://github.com/Obscurely/CHANGEME/releases) and
-   download the _CHANGEME-linux.deb_ file.
+1. Go to the [Releases Tab](https://github.com/Obscurely/CHANGEME_NAME/releases)
+   and download the _CHANGEME_BIN-linux.deb_ file.
 1. Open a terminal in the folder where your download is and run the following
    command:
 
-    ```shell
-    sudo dpkg -i CHANGEME-linux.deb
-    ```
+   ```shell
+   sudo dpkg -i CHANGEME_BIN-linux.deb
+   ```
 
-1. Run _CHANGEME_ in the terminal and there it is, the app.
+1. Run _CHANGEME_BIN_ in the terminal and there it is, the app.
 1. Might wanna take a look at the [Usage Tab](#🪧-usage) if you don't understand
    something about it.
 
 #### Arch Pkg File
 
-You shouldn't use this method, install the CHANGEME-bin AUR pkg instead. This is
-here just as another means if needed.
+You shouldn't use this method, install the CHANGEME_BIN-bin AUR pkg instead.
+This is here just as another means if needed.
 
-1. Go to the [Releases Tab](https://github.com/Obscurely/CHANGEME/releases) and
-   download the _CHANGEME-linux.pkg.tar.zst_ file.
+1. Go to the [Releases Tab](https://github.com/Obscurely/CHANGEME_NAME/releases)
+   and download the _CHANGEME_BIN-linux.pkg.tar.zst_ file.
 1. From you Arch Linux command line run the following command:
 
-    ```shell
-    sudo pacman -U CHANGEME-linux.pkg.tar.zst
-    ```
+   ```shell
+   sudo pacman -U CHANGEME_BIN-linux.pkg.tar.zst
+   ```
 
-1. Search for CHANGEME in your app launcher and launch it.
+1. Search for CHANGEME_NAME in your app launcher and launch it.
 1. Might wanna take a look at the [Usage Tab](#🪧-usage) if you don't understand
    something about it.
 
@@ -277,8 +278,8 @@ here just as another means if needed.
 
 #### Portable binary
 
-1. Go to the [Releases Tab](https://github.com/Obscurely/CHANGEME/releases) and
-   download the _CHANGEME-macos_ file.
+1. Go to the [Releases Tab](https://github.com/Obscurely/CHANGEME_NAME/releases)
+   and download the _CHANGEME_BIN-macos_ file.
 1. Double click the bin you just downloaded and there you go the program works.
 1. Might wanna take a look at the [Usage Tab](#🪧-usage) if you don't understand
    something about it.
@@ -288,13 +289,13 @@ here just as another means if needed.
 Damn simillar to [portable binary](#portable-binary), only real difference is
 this has an icon.
 
-1. Go to the [Releases Tab](https://github.com/Obscurely/CHANGEME/releases) and
-   download the _CHANGEME-macos-app.tar.gz_ file.
+1. Go to the [Releases Tab](https://github.com/Obscurely/CHANGEME_NAME/releases)
+   and download the _CHANGEME_BIN-macos-app.tar.gz_ file.
 1. Use your archive manager or run in the terminal the following command:
 
-    ```shell
-    tar -xzf CHANGEME-macos-app.tar.gz
-    ```
+   ```shell
+   tar -xzf CHANGEME_BIN-macos-app.tar.gz
+   ```
 
 1. Double clikc the app folder you just downloaded and there you go the program
    works.
@@ -305,8 +306,8 @@ this has an icon.
 
 Works just like any other dmg installer you've used.
 
-1. Go to the [Releases Tab](https://github.com/Obscurely/CHANGEME/releases) and
-   download the _CHANGEME-macos-installer.dmg_ file.
+1. Go to the [Releases Tab](https://github.com/Obscurely/CHANGEME_NAME/releases)
+   and download the _CHANGEME_BIN-macos-installer.dmg_ file.
 1. Double click to run the dmg.
 1. Drag the app folder over the _Applications_ folder.
 1. Done, you've just installed the app, should see it in launchpad now.
@@ -316,28 +317,28 @@ Works just like any other dmg installer you've used.
 #### Homebrew
 
 Note this method doesn't come with a desktop entry. You'll have to run the
-_CHANGEME_ command or just
+_CHANGEME_BIN_ command or just
 [create a shortcut yourself](https://siytek.com/macos-terminal-command-as-a-shortcut/#2.-Create-a-new-shortcut),
 it's really easy.
 
 1. You will need to have [homebrew](https://brew.sh) installed, if you don't
    have it installed run the following command:
 
-    ```shell
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    ```
+   ```shell
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   ```
 
 1. You'll need to add my tap repo, run the following command for that:
 
-    ```shell
-    brew tap Obscurely/tap
-    ```
+   ```shell
+   brew tap Obscurely/tap
+   ```
 
 1. Install the pkg.
 
-    ```shell
-    brew install CHANGEME
-    ```
+   ```shell
+   brew install CHANGEME_BIN
+   ```
 
 1. Might wanna take a look at the [Usage Tab](#🪧-usage) if you don't understand
    something about it.
@@ -355,21 +356,21 @@ This method will work across any Linux distribution, Windows 10/11 and macOS
    nix)
 1. Run the following command in your terminal of choice:
 
-    ```shell
-    cargo install CHANGEME
-    ```
+   ```shell
+   cargo install CHANGEME_BIN
+   ```
 
 1. Make sure you have .cargo/bin in path, for linux and macOS you would need to
    add the following line in your terminal RC file (e.g $HOME/.zshrc)
 
-    ```shell
-    export PATH=$HOME/.cargo/bin:$PATH # This is for Linux & macOS, look below for Windows.
-    ```
+   ```shell
+   export PATH=$HOME/.cargo/bin:$PATH # This is for Linux & macOS, look below for Windows.
+   ```
 
-    On windows it should work automatically (restart if just installed), if not you
-    can follow this [guide](https://www.computerhope.com/issues/ch000549.htm) for
-    how to add something to path. The cargo bin folder will be
-    Users\\{your-user}\\.cargo\\bin
+   On windows it should work automatically (restart if just installed), if not
+   you can follow this [guide](https://www.computerhope.com/issues/ch000549.htm)
+   for how to add something to path. The cargo bin folder will be
+   Users\\{your-user}\\.cargo\\bin
 
 1. You may want to create a
    [symlink](https://www.freecodecamp.org/news/symlink-tutorial-in-linux-how-to-create-and-remove-a-symbolic-link/)
@@ -393,60 +394,59 @@ nix).
 1. Clone this repo on your PC, you can use "git clone", if you have git
    installed, like this:
 
-    ```shell
-    git clone https://github.com/Obscurely/CHANGEME.git
-    ```
+   ```shell
+   git clone https://github.com/Obscurely/CHANGEME_NAME.git
+   ```
 
-    Otherwise in the right up side of the repo page you will see a download button,
-    download the repo as zip and extract it in a folder
+   Otherwise in the right up side of the repo page you will see a download
+   button, download the repo as zip and extract it in a folder
 
 1. Open a new terminal/cmd window in the folder you extracted the repo in, if
    you can't right click on the folder and open it there do:
 
-    ```shell
-    cd the/path
-    ```
+   ```shell
+   cd the/path
+   ```
 
-    and you will get there.
+   and you will get there.
 
 1. From there run this compile command in the terminal:
 
-    ```shell
-    cargo build --release
-    ```
+   ```shell
+   cargo build --release
+   ```
 
-    It will take a bit depending on your system because of executable speed
-    optimizations, but be patient.
+   It will take a bit depending on your system because of executable speed
+   optimizations, but be patient.
 
-1. Done, navigate to target/release and grab only the "CHANGEME" file from
+1. Done, navigate to target/release and grab only the "CHANGEME_BIN" file from
    there.
 
 ## 🪧 Usage
 
-**In the provided [video](#🎥-video-showcase) it's presented everything you should
-know on how to use CHANGEME. I also think the UI is intuitive enough, but I
-obviously can't have an unbiased opinion or a first look experience, so here you
-go.**
+**In the provided [video](#🎥-video-showcase) it's presented everything you
+should know on how to use CHANGEME_NAME. I also think the UI is intuitive
+enough, but I obviously can't have an unbiased opinion or a first look
+experience, so here you go.**
 
 ### Basics
 
-CHANGEME
+CHANGEME_MANUAL
 
 ### Advanced
 
-CHANGEME
+CHANGEME_MANUAL
 
 ## 🛣️ Road Map
 
 The roadmap (kanban board) is located up top in the projects tab or at
-[this link](https://github.com/users/Obscurely/projects/CHANGEME).
+[this link](https://github.com/users/Obscurely/projects/CHANGEME_MANUAL).
 
 ## 💁 Contributing
 
-Please read
-[CONTRIBUTING.md](CONTRIBUTING.md)
-and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md), but to generalise it the basic
-process is: edit a file you want, do a
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) and
+[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md), but to generalise it the basic process
+is: edit a file you want, do a
 [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request),
 I will look at it and if the change makes sense and is a good one I will accept
 it and that's it. Also be kind and respectful.
@@ -464,8 +464,8 @@ have fun :)
 ## 📧 Contact
 
 Either post an issue in the
-[Issues Tab](https://github.com/Obscurely/CHANGEME/issues) or contact me at this
-email adddress if you have more to say:
+[Issues Tab](https://github.com/Obscurely/CHANGEME_NAME/issues) or contact me at
+this email adddress if you have more to say:
 [obscurely.message@protonmail.com](mailto:obscurely.message@protonmail.com)
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K3H29LV)
@@ -473,13 +473,13 @@ email adddress if you have more to say:
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/Obscurely/CHANGEME.svg?style=for-the-badge
-[contributors-url]: https://github.com/Obscurely/CHANGEME/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Obscurely/CHANGEME.svg?style=for-the-badge
-[forks-url]: https://github.com/Obscurely/CHANGEME/network/members
-[stars-shield]: https://img.shields.io/github/stars/Obscurely/CHANGEME.svg?style=for-the-badge
-[stars-url]: https://github.com/Obscurely/CHANGEME/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Obscurely/CHANGEME.svg?style=for-the-badge
-[issues-url]: https://github.com/Obscurely/CHANGEME/issues
-[license-shield]: https://img.shields.io/github/license/Obscurely/CHANGEME.svg?style=for-the-badge
-[license-url]: https://github.com/Obscurely/CHANGEME/blob/master/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/Obscurely/CHANGEME_NAME.svg?style=for-the-badge
+[contributors-url]: https://github.com/Obscurely/CHANGEME_NAME/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Obscurely/CHANGEME_NAME.svg?style=for-the-badge
+[forks-url]: https://github.com/Obscurely/CHANGEME_NAME/network/members
+[stars-shield]: https://img.shields.io/github/stars/Obscurely/CHANGEME_NAME.svg?style=for-the-badge
+[stars-url]: https://github.com/Obscurely/CHANGEME_NAME/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Obscurely/CHANGEME_NAME.svg?style=for-the-badge
+[issues-url]: https://github.com/Obscurely/CHANGEME_NAME/issues
+[license-shield]: https://img.shields.io/github/license/Obscurely/CHANGEME_NAME.svg?style=for-the-badge
+[license-url]: https://github.com/Obscurely/CHANGEME_NAME/blob/master/LICENSE

@@ -1,11 +1,11 @@
-class CHANGEME < Formula
-    desc "CHANGEME"
-    homepage "https://github.com/Obscurely/CHANGEME"
-    url "https://github.com/Obscurely/CHANGEME/releases/download/vVERSION_PLACEHOLDER-stable/CHANGEME-macos.tar.gz"
+class CHANGEME_NAME < Formula
+    desc "CHANGEME_DESC"
+    homepage "https://github.com/Obscurely/CHANGEME_NAME"
+    url "https://github.com/Obscurely/CHANGEME_NAME/releases/download/vVERSION_PLACEHOLDER-stable/CHANGEME_BIN-macos.tar.gz"
     sha256 "SHA_PLACEHOLDER"
     version "VERSION_PLACEHOLDER"
 
     def install
-        bin.install "CHANGEME"
+        bin.install "CHANGEME_BIN"
     end
 end

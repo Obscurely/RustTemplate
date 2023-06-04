@@ -2,7 +2,7 @@
 
 let
   version = "VERSION_PLACEHOLDER";
-  name = "CHANGEME-${version}";
+  name = "CHANGEME_BIN-${version}";
 
   plat = {
     x86_64-linux = "";
@@ -13,7 +13,7 @@ let
   }.${stdenv.hostPlatform.system};
 
   src = fetchurl {
-    url = "https://github.com/Obscurely/CHANGEME/releases/download/v${version}-stable/CHANGEME-linux.AppImage";
+    url = "https://github.com/Obscurely/CHANGEME_NAME/releases/download/v${version}-stable/CHANGEME_BIN-linux.AppImage";
     inherit sha256;
   };
 
@@ -25,20 +25,20 @@ appimageTools.wrapType2 rec {
   inherit name src;
 
   extraInstallCommands = ''
-    mkdir -p $out/share/pixmaps $out/share/licenses/CHANGEME
-    cp ${appimageContents}/CHANGEME.png $out/share/pixmaps/
-    cp ${appimageContents}/CHANGEME.desktop $out
-    cp ${appimageContents}/LICENSE $out/share/licenses/CHANGEME/LICENSE
-    mv $out/bin/${name} $out/bin/CHANGEME
+    mkdir -p $out/share/pixmaps $out/share/licenses/CHANGEME_BIN
+    cp ${appimageContents}/CHANGEME_BIN.png $out/share/pixmaps/
+    cp ${appimageContents}/CHANGEME_NAME.desktop $out
+    cp ${appimageContents}/LICENSE $out/share/licenses/CHANGEME_BIN/LICENSE
+    mv $out/bin/${name} $out/bin/CHANGEME_BIN
     ${desktop-file-utils}/bin/desktop-file-install --dir $out/share/applications \
-      --set-key Exec --set-value $out/bin/CHANGEME \
-      --set-key Comment --set-value "CHANGEME Linux" \
-      --delete-original $out/CHANGEME.desktop
+      --set-key Exec --set-value $out/bin/CHANGEME_BIN \
+      --set-key Comment --set-value "CHANGEME_NAME Linux" \
+      --delete-original $out/CHANGEME_NAME.desktop
   '';
 
   meta = {
-    homepage = "https://github.com/Obscurely/CHANGEME";
-    description = "CHANGEME";
+    homepage = "https://github.com/Obscurely/CHANGEME_NAME";
+    description = "CHANGEME_DESC";
     license = lib.licenses.mit;
     platforms = lib.platforms.linux;
   };
