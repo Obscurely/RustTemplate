@@ -3,13 +3,13 @@ name = "CHANGEME_BIN"
 authors = ["Obscurely <adrian.obscurely@protonmail.com>"]
 version = "0.1.0"
 edition = "2021"
-rust-version = "1.69" # Minimum rust version
+rust-version = "1.69"                                                              # Minimum rust version
 description = "CHANGEME_DESC"
 documentation = "https://github.com/Obscurely/CHANGEME_NAME/blob/master/README.md"
 repository = "https://github.com/Obscurely/CHANGEME_NAME"
 homepage = "https://github.com/Obscurely/CHANGEME_NAME"
-categories = [] # CHANGEME_MANUAL
-keywords = [] # CHANGEME_MANUAL
+categories = []                                                                    # CHANGEME_MANUAL
+keywords = []                                                                      # CHANGEME_MANUAL
 readme = "README.md"
 license = "MIT"
 

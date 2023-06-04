@@ -1,16 +1,12 @@
 name: Rust
-
 on:
   push:
-    branches: [ "master" ]
+    branches: ["master"]
   pull_request:
-    branches: [ "master" ]
-
+    branches: ["master"]
 env:
   CARGO_TERM_COLOR: always
-
 jobs:
-
   test:
     name: Test Suite
     runs-on: ubuntu-latest
@@ -22,7 +18,6 @@ jobs:
       - uses: Swatinem/rust-cache@v2
       - name: Run tests
         run: cargo test --all-features --workspace
-
   rustfmt:
     name: Rustfmt
     runs-on: ubuntu-latest
@@ -36,7 +31,6 @@ jobs:
       - uses: Swatinem/rust-cache@v2
       - name: Check formatting
         run: cargo fmt --all --check
-
   clippy:
     name: Clippy
     runs-on: ubuntu-latest
@@ -50,7 +44,6 @@ jobs:
       - uses: Swatinem/rust-cache@v2
       - name: Clippy check
         run: cargo clippy --all-targets --all-features --workspace -- -D warnings
-
   miri:
     name: "Miri"
     runs-on: ubuntu-latest
@@ -63,7 +56,6 @@ jobs:
           cargo miri setup
       - name: Test with Miri
         run: cargo miri test
-
   docs:
     name: Docs
     runs-on: ubuntu-latest
@@ -77,3 +69,20 @@ jobs:
         env:
           RUSTDOCFLAGS: -D warnings
         run: cargo doc --no-deps --document-private-items --all-features --workspace --examples
+  run-lint:
+    name: Super Linter
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          # Full git history is needed to get a proper list of changed files within `super-linter`
+          fetch-depth: 0
+      - name: Lint Code Base
+        uses: github/super-linter@v4
+        env:
+          VALIDATE_ALL_CODEBASE: true
+          VALIDATE_RUST_2021: false
+          VALIDATE_RUST_CLIPPY: false
+          DEFAULT_BRANCH: "master"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

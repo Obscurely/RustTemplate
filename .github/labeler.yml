@@ -1,13 +1,8 @@
-# Add 'repo' label to any root file changes
-repo:
-- '*'
-
-# Add 'source' label to any change to src files within the source dir EXCEPT for the docs sub-folder
-source:
-- any: ['src/**']
-
 assets:
-- any: ['assets/**']
-
+  - any: ["assets/**"]
+repo:
+  - "*"
 resources:
-- any: ['resources/**']
+  - any: ["resources/**"]
+source:
+  - any: ["src/**"]
