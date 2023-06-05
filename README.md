@@ -123,6 +123,8 @@ CHANGEME_MANUAL
 1. Double click the exe you just downloaded and there you go the program works.
 1. Might wanna take a look at the [Usage Tab](#-usage) if you don't understand
    something about it.
+1. Also you might wanna make a desktop shortcut and one to place in the
+   [start-menu](https://www.windowscentral.com/add-app-shortcuts-start-menu-manually-windows-10)
 
 #### Installer
 
@@ -155,6 +157,11 @@ CHANGEME_MANUAL
 1. Double click the bin you just downloaded and there you go the program works.
 1. Might wanna take a look at the [Usage Tab](#-usage) if you don't understand
    something about it.
+1. Also you might wanna download _CHANGEME_BIN-linux.tar.gz_ file instead and
+   extract linux/desktop/CHANGEME_NAME.desktop to
+   $HOME/.local/share/applications, linux/desktop/icons to
+   $HOME/.local/share/icons in order to have a start-menu shortcut and
+   CHANGEME_BIN to /usr/bin/.
 
 #### AppImage
 
@@ -250,6 +257,10 @@ will try to make a ppa eventually.
 1. Run _CHANGEME_BIN_ in the terminal and there it is, the app.
 1. Might wanna take a look at the [Usage Tab](#-usage) if you don't understand
    something about it.
+1. Also you might wanna download _CHANGEME_BIN-linux.tar.gz_ file instead and
+   extract linux/desktop/CHANGEME_NAME.desktop to
+   $HOME/.local/share/applications and linux/desktop/icons to
+   $HOME/.local/share/icons in order to have a start-menu shortcut.
 
 #### Arch Pkg File
 
@@ -284,6 +295,8 @@ This is here just as another means if needed.
 1. Double click the bin you just downloaded and there you go the program works.
 1. Might wanna take a look at the [Usage Tab](#-usage) if you don't understand
    something about it.
+1. Also you might wanna place it somewhere special and
+   [create a shortuct](https://www.lifewire.com/create-desktop-shortcuts-on-a-mac-5184827)
 
 #### App Folder
 
@@ -353,8 +366,8 @@ This method will work across any Linux distribution, Windows 10/11 and macOS
 
 1. Install rust, either using the official
    [rustup installer](https://www.rust-lang.org/tools/install) or any pkg
-   manager you may use. (There is also a shell.nix file in the repository if you use
-   nix)
+   manager you may use. (There is also a shell.nix file in the repository if you
+   use nix)
 1. Run the following command in your terminal of choice:
 
    ```shell
@@ -381,6 +394,8 @@ This method will work across any Linux distribution, Windows 10/11 and macOS
 
 1. In order to update run the install command again, and you can now follow
    [usage](#-usage) for more information on how to use it.
+1. Also you might wanna create a shortcut and place it in the start-menu
+   acording to your platform.
 
 ---
 
@@ -389,8 +404,8 @@ This method will work across any Linux distribution, Windows 10/11 and macOS
 This program only uses cross platform libraries. The following steps require
 that you have rust installed, check their official
 [installation page](https://www.rust-lang.org/tools/install) or use any pkg
-manager you may want. (There is also a shell.nix file in the repository if you use
-nix).
+manager you may want. (There is also a shell.nix file in the repository if you
+use nix).
 
 1. Clone this repository on your PC, you can use "git clone", if you have git
    installed, like this:
@@ -425,10 +440,10 @@ nix).
 
 ## 🪧 Usage
 
-**In the provided [video](#-video-showcase) it's presented everything you
-should know on how to use CHANGEME_NAME. I also think the UI is intuitive
-enough, but I obviously can't have an unbiased opinion or a first look
-experience, so here you go.**
+**In the provided [video](#-video-showcase) it's presented everything you should
+know on how to use CHANGEME_NAME. I also think the UI is intuitive enough, but I
+obviously can't have an unbiased opinion or a first look experience, so here you
+go.**
 
 ### Basics
 
