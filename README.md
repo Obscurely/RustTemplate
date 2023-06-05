@@ -103,10 +103,10 @@ CHANGEME_MANUAL
 
 ### 🏃‍♂️ Running The Program
 
-- [Windows](#🪟-windows)
-- [Linux](#🐧-linux)
-- [MacOS](#🍎-macos)
-- [All Platforms](#🚉-all-platforms)
+- [Windows](#-windows)
+- [Linux](#-linux)
+- [MacOS](#-macos)
+- [All Platforms](#-all-platforms)
 
 ---
 
