@@ -1,3 +1,4 @@
+---
 name: Rust
 on:
   push:
@@ -43,7 +44,8 @@ jobs:
           components: clippy
       - uses: Swatinem/rust-cache@v2
       - name: Clippy check
-        run: cargo clippy --all-targets --all-features --workspace -- -D warnings
+        run: |
+          cargo clippy --all-targets --all-features --workspace -- -D warnings
   miri:
     name: "Miri"
     runs-on: ubuntu-latest
@@ -68,7 +70,9 @@ jobs:
       - name: Check documentation
         env:
           RUSTDOCFLAGS: -D warnings
-        run: cargo doc --no-deps --document-private-items --all-features --workspace --examples
+        run: |
+          cargo doc --no-deps --document-private-items --all-features \
+          --workspace --examples
   run-lint:
     name: Super Linter
     runs-on: ubuntu-latest
@@ -76,7 +80,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
         with:
-          # Full git history is needed to get a proper list of changed files within `super-linter`
+          # Full git history is needed to get a proper list of changed files
           fetch-depth: 0
       - name: Lint Code Base
         uses: github/super-linter@v4
@@ -84,5 +88,7 @@ jobs:
           VALIDATE_ALL_CODEBASE: true
           VALIDATE_RUST_2021: false
           VALIDATE_RUST_CLIPPY: false
+          VALIDATE_RUBY: false
+          FILTER_REGEX_EXCLUDE: "README.md"
           DEFAULT_BRANCH: "master"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

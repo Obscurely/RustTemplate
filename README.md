@@ -95,7 +95,7 @@ CHANGEME_MANUAL
 
 - [Rust 1.69.0](https://www.rust-lang.org/)
 
-#### The stock libraries and these awesome 3rd party ones
+#### The stock libraries and these awesome third-party ones
 
 - CHANGEME_MANUAL
 
@@ -235,7 +235,7 @@ You are using NixOS, don't worry I got you bro.
 #### Deb File
 
 You should use the app image. This does not provide a desktop file, you'll have
-to run it from the command line. It's here just as another means if needed. I
+to run it from the command-line. It's here just as another means if needed. I
 will try to make a ppa eventually.
 
 1. Go to the [Releases Tab](https://github.com/Obscurely/CHANGEME_NAME/releases)
@@ -258,7 +258,7 @@ This is here just as another means if needed.
 
 1. Go to the [Releases Tab](https://github.com/Obscurely/CHANGEME_NAME/releases)
    and download the _CHANGEME_BIN-linux.pkg.tar.zst_ file.
-1. From you Arch Linux command line run the following command:
+1. From you Arch Linux command-line run the following command:
 
    ```shell
    sudo pacman -U CHANGEME_BIN-linux.pkg.tar.zst
@@ -270,7 +270,7 @@ This is here just as another means if needed.
 
 ---
 
-### 🍎 MacOS
+### 🍎 macOS
 
 - [Portable binary](#portable-binary)
 - [App Folder](#app-folder)
@@ -329,7 +329,7 @@ it's really easy.
    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
    ```
 
-1. You'll need to add my tap repo, run the following command for that:
+1. You'll need to add my tap repository, run the following command for that:
 
    ```shell
    brew tap Obscurely/tap
@@ -353,7 +353,7 @@ This method will work across any Linux distribution, Windows 10/11 and macOS
 
 1. Install rust, either using the official
    [rustup installer](https://www.rust-lang.org/tools/install) or any pkg
-   manager you may use. (There is also a shell.nix file in the repo if you use
+   manager you may use. (There is also a shell.nix file in the repository if you use
    nix)
 1. Run the following command in your terminal of choice:
 
@@ -389,21 +389,21 @@ This method will work across any Linux distribution, Windows 10/11 and macOS
 This program only uses cross platform libraries. The following steps require
 that you have rust installed, check their official
 [installation page](https://www.rust-lang.org/tools/install) or use any pkg
-manager you may want. (There is also a shell.nix file in the repo if you use
+manager you may want. (There is also a shell.nix file in the repository if you use
 nix).
 
-1. Clone this repo on your PC, you can use "git clone", if you have git
+1. Clone this repository on your PC, you can use "git clone", if you have git
    installed, like this:
 
    ```shell
    git clone https://github.com/Obscurely/CHANGEME_NAME.git
    ```
 
-   Otherwise in the right up side of the repo page you will see a download
-   button, download the repo as zip and extract it in a folder
+   Otherwise in the right up side of the repository page you will see a download
+   button, download the repository as zip and extract it in a folder
 
-1. Open a new terminal/cmd window in the folder you extracted the repo in, if
-   you can't right click on the folder and open it there do:
+1. Open a new terminal/cmd window in the folder you extracted the repository in,
+   if you can't right click on the folder and open it there do:
 
    ```shell
    cd the/path
