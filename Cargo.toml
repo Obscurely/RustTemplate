@@ -1,5 +1,5 @@
 [package]
-name = "CHANGEME_BIN"
+name = "changeme_bin"
 authors = ["Obscurely <adrian.obscurely@protonmail.com>"]
 version = "0.1.0"
 edition = "2021"

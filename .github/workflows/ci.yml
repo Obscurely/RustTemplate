@@ -70,9 +70,9 @@ jobs:
       - name: Check documentation
         env:
           RUSTDOCFLAGS: -D warnings
-        run: |
+        run: >
           cargo doc --no-deps --document-private-items --all-features \
-            --workspace --examples
+          --workspace --examples
   run-lint:
     name: Super Linter
     runs-on: ubuntu-latest
