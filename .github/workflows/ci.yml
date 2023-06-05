@@ -8,6 +8,12 @@ on:
 env:
   CARGO_TERM_COLOR: always
 jobs:
+  cargo-deny:
+    name: Cargo Deny
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: EmbarkStudios/cargo-deny-action@v1
   test:
     name: Test Suite
     runs-on: ubuntu-latest
@@ -46,6 +52,25 @@ jobs:
       - name: Clippy check
         run: |
           cargo clippy --all-targets --all-features --workspace -- -D warnings
+  run-lint:
+    name: Super Linter
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          # Full git history is needed to get a proper list of changed files
+          fetch-depth: 0
+      - name: Lint Code Base
+        uses: github/super-linter@v5
+        env:
+          VALIDATE_ALL_CODEBASE: false
+          VALIDATE_RUST_2021: false
+          VALIDATE_RUST_CLIPPY: false
+          VALIDATE_RUBY: false
+          FILTER_REGEX_EXCLUDE: "README.md"
+          DEFAULT_BRANCH: "master"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   miri:
     name: "Miri"
     runs-on: ubuntu-latest
@@ -73,22 +98,3 @@ jobs:
         run: >
           cargo doc --no-deps --document-private-items --all-features
           --workspace --examples
-  run-lint:
-    name: Super Linter
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-        with:
-          # Full git history is needed to get a proper list of changed files
-          fetch-depth: 0
-      - name: Lint Code Base
-        uses: github/super-linter@v5
-        env:
-          VALIDATE_ALL_CODEBASE: false
-          VALIDATE_RUST_2021: false
-          VALIDATE_RUST_CLIPPY: false
-          VALIDATE_RUBY: false
-          FILTER_REGEX_EXCLUDE: "README.md"
-          DEFAULT_BRANCH: "master"
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
