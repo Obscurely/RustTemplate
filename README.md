@@ -28,26 +28,26 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#🪽-about-the-project">About The Project</a>
+      <a href="# -about-the-project">About The Project</a>
       <ul>
-        <li><a href="#🎥-video-showcase">Video showcase</a></li>
-        <li><a href="#🍔-built-with">Built with</a></li>
+        <li><a href="#-video-showcase">Video showcase</a></li>
+        <li><a href="#-built-with">Built with</a></li>
         <ul>
-          <li><a href="#the-stock-libraries-and-these-awesome-3rd-party-ones">The stock libraries and these awesome 3rd party ones</a></li>
+          <li><a href="#the-stock-libraries-and-these-awesome-third-party-ones">The stock libraries and these awesome 3rd party ones</a></li>
         </ul>
       </ul>
     </li>
     <li>
-      <a href="#🏁-getting-started">Getting Started</a>
+      <a href="#-getting-started">Getting Started</a>
       <ul>
-        <li><a href="#🏃‍♂️-running-the-program">Running the Program</a></li>
+        <li><a href="#-running-the-program">Running the Program</a></li>
         <ul>
-          <li><a href="#🪟-windows">Windows</a></li>
+          <li><a href="#-windows">Windows</a></li>
           <ul>
             <li><a href="#portable-exe">Portable EXE</a></li>
             <li><a href="#installer">Installer</a></li>
           </ul>
-          <li><a href="#🐧-linux">Linux</a></li>
+          <li><a href="#-linux">Linux</a></li>
           <ul>
             <li><a href="#portable-bin">Portable Bin</a></li>
             <li><a href="#appimage">AppImage</a></li>
@@ -56,30 +56,30 @@
             <li><a href="#deb-file">Deb File</a></li>
             <li><a href="#arch-pkg-file">Arch Pkg File</a></li>
           </ul>
-          <li><a href="#🍎-macos">MacOS</a></li>
+          <li><a href="#-macos">MacOS</a></li>
           <ul>
             <li><a href="#portable-binary">Portable Bin</a></li>
             <li><a href="#app-folder">App Folder</a></li>
             <li><a href="#dmg-installer">DMG Installer</a></li>
             <li><a href="#homebrew">Homebrew</a></li>
           </ul>
-          <li><a href="#🚉-all-platforms">All Platforms</a></li>
+          <li><a href="#-all-platforms">All Platforms</a></li>
         </ul>
-        <li><a href="#🛠️-compilation">Compilation</a></li>
+        <li><a href="#-compilation">Compilation</a></li>
       </ul>
     </li>
     <li>
-      <a href="#🪧-usage">Usage</a>
+      <a href="#-usage">Usage</a>
       <ul>
         <li><a href="#basics">Basics</a></li>
         <li><a href="#advanced">Advanced</a></li>
       </ul>
     </li>
-    <li><a href="#🛣️-road-map">Road Map</a></li>
-    <li><a href="#💁-contributing">Contributing</a></li>
-    <li><a href="#🛡️-security">Security</a></li>
-    <li><a href="#🪪-license">License</a></li>
-    <li><a href="#📧-contact">Contact</a></li>
+    <li><a href="  #-road-map">Road Map</a></li>
+    <li><a href="#-contributing">Contributing</a></li>
+    <li><a href="#-security">Security</a></li>
+    <li><a href="#-license">License</a></li>
+    <li><a href="#-contact">Contact</a></li>
   </ol>
 </details>
 
@@ -121,7 +121,7 @@ CHANGEME_MANUAL
    and download the _CHANGEME_BIN-windows.exe_ file (might have to click show
    all).
 1. Double click the exe you just downloaded and there you go the program works.
-1. Might wanna take a look at the [Usage Tab](#🪧-usage) if you don't understand
+1. Might wanna take a look at the [Usage Tab](#-usage) if you don't understand
    something about it.
 
 #### Installer
@@ -134,7 +134,7 @@ CHANGEME_MANUAL
 1. If you look now in the start menu (or on the desktop if you ticked create
    desktop shortcut) you are gonna see a shortcut for CHANGEME_NAME, just run it
    like any other program.
-1. Might wanna take a look at the [Usage Tab](#🪧-usage) if you don't understand
+1. Might wanna take a look at the [Usage Tab](#-usage) if you don't understand
    something about it.
 
 ---
@@ -153,7 +153,7 @@ CHANGEME_MANUAL
 1. Go to the [Releases Tab](https://github.com/Obscurely/CHANGEME_NAME/releases)
    and download the _CHANGEME_BIN-linux_ file.
 1. Double click the bin you just downloaded and there you go the program works.
-1. Might wanna take a look at the [Usage Tab](#🪧-usage) if you don't understand
+1. Might wanna take a look at the [Usage Tab](#-usage) if you don't understand
    something about it.
 
 #### AppImage
@@ -166,7 +166,7 @@ CHANGEME_MANUAL
    don't have it already, so when you start the AppImage you'll get a prompt
    asking if you want to integrate and run it and if you do so it will appear
    just as if you installed it.
-1. Might wanna take a look at the [Usage Tab](#🪧-usage) if you don't understand
+1. Might wanna take a look at the [Usage Tab](#-usage) if you don't understand
    something about it.
 
 #### AUR
@@ -190,7 +190,7 @@ you should)
    ```
 
 1. Search for CHANGEME_NAME in your app launcher and launch it.
-1. Might wanna take a look at the [Usage Tab](#🪧-usage) if you don't understand
+1. Might wanna take a look at the [Usage Tab](#-usage) if you don't understand
    something about it.
 
 b. Manually cloning and building it from AUR
@@ -229,7 +229,7 @@ You are using NixOS, don't worry I got you bro.
 1. If you use flakes then put it in your pkgs folder, and up-top add your tag
    (like _my_). If you don't just add the code in your default.nix file and
    install it this way.
-1. Might wanna take a look at the [Usage Tab](#🪧-usage) if you don't understand
+1. Might wanna take a look at the [Usage Tab](#-usage) if you don't understand
    something about it.
 
 #### Deb File
@@ -248,7 +248,7 @@ will try to make a ppa eventually.
    ```
 
 1. Run _CHANGEME_BIN_ in the terminal and there it is, the app.
-1. Might wanna take a look at the [Usage Tab](#🪧-usage) if you don't understand
+1. Might wanna take a look at the [Usage Tab](#-usage) if you don't understand
    something about it.
 
 #### Arch Pkg File
@@ -265,7 +265,7 @@ This is here just as another means if needed.
    ```
 
 1. Search for CHANGEME_NAME in your app launcher and launch it.
-1. Might wanna take a look at the [Usage Tab](#🪧-usage) if you don't understand
+1. Might wanna take a look at the [Usage Tab](#-usage) if you don't understand
    something about it.
 
 ---
@@ -282,7 +282,7 @@ This is here just as another means if needed.
 1. Go to the [Releases Tab](https://github.com/Obscurely/CHANGEME_NAME/releases)
    and download the _CHANGEME_BIN-macos_ file.
 1. Double click the bin you just downloaded and there you go the program works.
-1. Might wanna take a look at the [Usage Tab](#🪧-usage) if you don't understand
+1. Might wanna take a look at the [Usage Tab](#-usage) if you don't understand
    something about it.
 
 #### App Folder
@@ -300,7 +300,7 @@ this has an icon.
 
 1. Double clikc the app folder you just downloaded and there you go the program
    works.
-1. Might wanna take a look at the [Usage Tab](#🪧-usage) if you don't understand
+1. Might wanna take a look at the [Usage Tab](#-usage) if you don't understand
    something about it.
 
 #### DMG Installer
@@ -312,7 +312,7 @@ Works just like any other dmg installer you've used.
 1. Double click to run the dmg.
 1. Drag the app folder over the _Applications_ folder.
 1. Done, you've just installed the app, should see it in launchpad now.
-1. Might wanna take a look at the [Usage Tab](#🪧-usage) if you don't understand
+1. Might wanna take a look at the [Usage Tab](#-usage) if you don't understand
    something about it.
 
 #### Homebrew
@@ -341,7 +341,7 @@ it's really easy.
    brew install CHANGEME_BIN
    ```
 
-1. Might wanna take a look at the [Usage Tab](#🪧-usage) if you don't understand
+1. Might wanna take a look at the [Usage Tab](#-usage) if you don't understand
    something about it.
 
 ---
@@ -380,7 +380,7 @@ This method will work across any Linux distribution, Windows 10/11 and macOS
    if you are on Windows to the bin file for easy access.
 
 1. In order to update run the install command again, and you can now follow
-   [usage](#🪧-usage) for more information on how to use it.
+   [usage](#-usage) for more information on how to use it.
 
 ---
 
@@ -425,7 +425,7 @@ nix).
 
 ## 🪧 Usage
 
-**In the provided [video](#🎥-video-showcase) it's presented everything you
+**In the provided [video](#-video-showcase) it's presented everything you
 should know on how to use CHANGEME_NAME. I also think the UI is intuitive
 enough, but I obviously can't have an unbiased opinion or a first look
 experience, so here you go.**
