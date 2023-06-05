@@ -75,7 +75,7 @@
         <li><a href="#advanced">Advanced</a></li>
       </ul>
     </li>
-    <li><a href="&nbsp;&nbsp;-road-map">Road Map</a></li>
+    <li><a href="#-road-map">Road Map</a></li>
     <li><a href="#-contributing">Contributing</a></li>
     <li><a href="#-security">Security</a></li>
     <li><a href="#-license">License</a></li>
@@ -101,7 +101,7 @@ CHANGEME_MANUAL
 
 ## 🏁 Getting Started
 
-### 🏃‍♂️ Running The Program
+### 🏃 Running The Program
 
 - [Windows](#-windows)
 - [Linux](#-linux)
@@ -384,7 +384,7 @@ This method will work across any Linux distribution, Windows 10/11 and macOS
 
 ---
 
-### 🛠️ Compilation
+### 🛠 Compilation
 
 This program only uses cross platform libraries. The following steps require
 that you have rust installed, check their official
@@ -438,7 +438,7 @@ CHANGEME_MANUAL
 
 CHANGEME_MANUAL
 
-## 🛣️ Road Map
+## 🗾 Road Map
 
 The roadmap (kanban board) is located up top in the projects tab or at
 [this link](https://github.com/users/Obscurely/projects/CHANGEME_MANUAL).
@@ -452,7 +452,7 @@ is: edit a file you want, do a
 I will look at it and if the change makes sense and is a good one I will accept
 it and that's it. Also be kind and respectful.
 
-## 🛡️ Security
+## 🔰 Security
 
 If you happen to find any issues plase carefully read [SECURITY.md](SECURITY.md)
 and stricly follow everything stated.
