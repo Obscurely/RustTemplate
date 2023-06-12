@@ -9,6 +9,9 @@ assignees: Obscurely
 
 # Bug Report
 
+Please replace the text under the following sections giving an appropriate
+answer.
+
 ## Describe the bug
 
 A clear and concise description of what the bug is.

@@ -9,6 +9,9 @@ assignees: ''
 
 # Feature Request
 
+Please replace the text under the following sections giving an appropriate
+answer.
+
 ## Motivations
 
 If your feature request is related to a problem, please give a clear and concise
