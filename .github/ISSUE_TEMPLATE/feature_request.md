@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-# Feature Request
+## Feature Request
 
 Please replace the text under the following sections giving an appropriate
 answer.
