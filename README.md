@@ -83,7 +83,7 @@
     </li>
     <li><a href="#-road-map">Road Map</a></li>
     <li><a href="#-contributing">Contributing</a></li>
-    <li><a href="#-faq">FAQ</a></li>
+    <li><a href="#faq">FAQ</a></li>
     <li><a href="#-security">Security</a></li>
     <li><a href="#-license">License</a></li>
     <li><a href="#-contact">Contact</a></li>
@@ -95,7 +95,7 @@
 
 CHANGEME_MANUAL
 
-If you've got any questions please give the [FAQ](#-faq) a check.
+If you've got any questions please give the [FAQ](#faq) a check.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
