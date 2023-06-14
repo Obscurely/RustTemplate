@@ -83,15 +83,19 @@
     </li>
     <li><a href="#-road-map">Road Map</a></li>
     <li><a href="#-contributing">Contributing</a></li>
+    <li><a href="#-faq">FAQ</a></li>
     <li><a href="#-security">Security</a></li>
     <li><a href="#-license">License</a></li>
     <li><a href="#-contact">Contact</a></li>
+    <li><a href="#-acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
 ## 🪽 About The Project
 
 CHANGEME_MANUAL
+
+If you've got any questions please give the [FAQ](#-faq) a check.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -494,12 +498,27 @@ The roadmap (kanban board) is located up top in the projects tab or at
 
 ## 💁 Contributing
 
+<a href="https://github.com/Obscurely/CHANGEME_NAME/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Obscurely/CHANGEME_NAME" />
+</a>
+
+Contributions are always welcome!
+
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) and
 [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md), but to generalise it the basic process
 is: edit a file you want, do a
 [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request),
 I will look at it and if the change makes sense and is a good one I will accept
 it and that's it. Also be kind and respectful.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## ❓FAQ
+
+CHANGEME_MANUAL
+
+1. Question 1
+   - Answer 1
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -533,6 +552,7 @@ this email adddress if you have more to say:
 - [This other Rust project template](https://github.com/vmchale/project-init)
 - [This general GitHub project template](https://github.com/maehr/github-template)
 - [This website full of the best Rust tools](https://blessed.rs/crates)
+- [Shields.io](https://shields.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
