@@ -1,4 +1,5 @@
 <div id="top"></div>
+<a name="readme-top"></a>
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url] [![Stargazers][stars-shield]][stars-url]
@@ -16,8 +17,13 @@
 <p align="center">
     CHANGEME_DESC
     <p>
+        <a href="https://github.com/Obscurely/CHANGEME_NAME/wiki"><strong>Explore the docs »</strong></a>
+        <br />
+        <br />
+        <a href="https://github.com/Obscurely/CHANGEME_NAME#-video-showcase">View Demo</a>
+        ·
         <a href="https://github.com/Obscurely/CHANGEME_NAME/issues">Report Bug</a>
-        |
+        ·
         <a href="https://github.com/Obscurely/CHANGEME_NAME/issues">Request Feature</a>
     </p>
   </p>
@@ -87,17 +93,25 @@
 
 CHANGEME_MANUAL
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### 🎥 Video showcase
 
 [Showcase](CHANGEME_MANUAL) <!-- Showcase video uploaded to github -->
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### 🍔 Built with
 
 - [Rust 1.69.0](https://www.rust-lang.org/)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 #### The stock libraries and these awesome third-party ones
 
 - CHANGEME_MANUAL
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🏁 Getting Started
 
@@ -107,6 +121,8 @@ CHANGEME_MANUAL
 - [Linux](#-linux)
 - [MacOS](#-macos)
 - [All Platforms](#-all-platforms)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ---
 
@@ -139,6 +155,8 @@ CHANGEME_MANUAL
 1. Might wanna take a look at the [Usage Tab](#-usage) if you don't understand
    something about it.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ---
 
 ### 🐧 Linux
@@ -149,6 +167,8 @@ CHANGEME_MANUAL
 - [Nix File](#nix-file)
 - [Deb File](#deb-file)
 - [Arch Pkg File](#arch-pkg-file)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 #### Portable Bin
 
@@ -279,6 +299,8 @@ This is here just as another means if needed.
 1. Might wanna take a look at the [Usage Tab](#-usage) if you don't understand
    something about it.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ---
 
 ### 🍎 macOS
@@ -287,6 +309,8 @@ This is here just as another means if needed.
 - [App Folder](#app-folder)
 - [DMG Installer](#dmg-installer)
 - [Homebrew](#homebrew)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 #### Portable binary
 
@@ -357,6 +381,8 @@ it's really easy.
 1. Might wanna take a look at the [Usage Tab](#-usage) if you don't understand
    something about it.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ---
 
 ### 🚉 All Platforms
@@ -396,6 +422,8 @@ This method will work across any Linux distribution, Windows 10/11 and macOS
    [usage](#-usage) for more information on how to use it.
 1. Also you might wanna create a shortcut and place it in the start-menu
    acording to your platform.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ---
 
@@ -438,6 +466,8 @@ use nix).
 1. Done, navigate to target/release and grab only the "CHANGEME_BIN" file from
    there.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 🪧 Usage
 
 **In the provided [video](#-video-showcase) it's presented everything you should
@@ -453,10 +483,14 @@ CHANGEME_MANUAL
 
 CHANGEME_MANUAL
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 🗾 Road Map
 
 The roadmap (kanban board) is located up top in the projects tab or at
 [this link](https://github.com/users/Obscurely/projects/CHANGEME_MANUAL).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💁 Contributing
 
@@ -467,15 +501,21 @@ is: edit a file you want, do a
 I will look at it and if the change makes sense and is a good one I will accept
 it and that's it. Also be kind and respectful.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 🔰 Security
 
 If you happen to find any issues plase carefully read [SECURITY.md](SECURITY.md)
 and stricly follow everything stated.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 🪪 License
 
 Is under [MIT](https://mit-license.org/) so stick to the license conditions and
 have fun :)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📧 Contact
 
@@ -483,6 +523,18 @@ Either post an issue in the
 [Issues Tab](https://github.com/Obscurely/CHANGEME_NAME/issues) or contact me at
 this email adddress if you have more to say:
 [obscurely.message@protonmail.com](mailto:obscurely.message@protonmail.com)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🦾 Acknowledgments
+
+- [Best README template indeed](https://github.com/othneildrew/Best-README-Template/blob/master/README.md)
+- [This Rust project template](https://github.com/rust-github/template/tree/main/template)
+- [This other Rust project template](https://github.com/vmchale/project-init)
+- [This general GitHub project template](https://github.com/maehr/github-template)
+- [This website full of the best Rust tools](https://blessed.rs/crates)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K3H29LV)
 
