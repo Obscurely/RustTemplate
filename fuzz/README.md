@@ -39,7 +39,7 @@ program under test. The most common variety of fuzzers are mutational fuzzers;
 given a set of existing inputs (a "corpus"), it will attempt to slightly change
 (or "mutate") these inputs into new inputs that cover parts of the code that
 haven't yet been observed. Using this strategy, we can quite efficiently
-generate testcases which cover significant portions of the program, both with
+generate test cases which cover significant portions of the program, both with
 expected and unexpected data.
 [This is really quite effective for finding bugs.](https://github.com/rust-fuzz/trophy-case)
 

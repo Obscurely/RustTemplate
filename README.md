@@ -524,8 +524,8 @@ CHANGEME_MANUAL
 
 ## 🔰 Security
 
-If you happen to find any issues plase carefully read [SECURITY.md](SECURITY.md)
-and stricly follow everything stated.
+If you happen to find any issues please carefully read [SECURITY.md](SECURITY.md)
+and strictly follow everything stated.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -540,7 +540,7 @@ have fun :)
 
 Either post an issue in the
 [Issues Tab](https://github.com/Obscurely/CHANGEME_NAME/issues) or contact me at
-this email adddress if you have more to say:
+this email address if you have more to say:
 [obscurely.message@protonmail.com](mailto:obscurely.message@protonmail.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
