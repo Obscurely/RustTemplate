@@ -15,3 +15,16 @@ Cargo.lock
 # Additional system files
 .DS_Store
 .cargo-ok
+
+# VSCode configuration
+.vscode/
+
+# Sublime Text configuration
+*.sublime-*
+
+# IntelliJ IDE configuration
+.idea/
+/*.iml
+
+# Vim swap files
+*.swp
