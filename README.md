@@ -36,10 +36,11 @@
     <li>
       <a href="# -about-the-project">About The Project</a>
       <ul>
+        <li><a href="#-features">Features</a></li>
         <li><a href="#-video-showcase">Video showcase</a></li>
         <li><a href="#-built-with">Built with</a></li>
         <ul>
-          <li><a href="#the-stock-libraries-and-these-awesome-third-party-ones">The stock libraries and these awesome 3rd party ones</a></li>
+          <li><a href="#the-stock-libraries-and-these-awesome-third-party-ones">The stock libraries and these awesome third-party party ones</a></li>
         </ul>
       </ul>
     </li>
@@ -84,6 +85,7 @@
     <li><a href="#-road-map">Road Map</a></li>
     <li><a href="#-contributing">Contributing</a></li>
     <li><a href="#faq">FAQ</a></li>
+    <li><a href="#-semver">Semver</a></li>
     <li><a href="#-security">Security</a></li>
     <li><a href="#-license">License</a></li>
     <li><a href="#-contact">Contact</a></li>
@@ -96,6 +98,12 @@
 CHANGEME_MANUAL
 
 If you've got any questions please give the [FAQ](#faq) a check.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### 💡 Features
+
+- [x] CHANGEME_MANUAL...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -521,6 +529,12 @@ CHANGEME_MANUAL
 
 1. Question 1
    - Answer 1
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📟 Semver
+
+CHANGEME_NAME is following [Semantic Versioning 2.0](https://semver.org/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
