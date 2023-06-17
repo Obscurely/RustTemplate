@@ -1,5 +1,8 @@
 ---
 contact_links:
+  - name: 👨‍👨‍👦‍👦 Ask a question on github
+    url: https://github.com/Obscurely/CHANGEME_NAME/discussions/
+    about: Ask questions and discuss with other community members.
   - name: 💬 Discord Chat
     url: https://discord.gg/ykp5kb46TY
     about: >
