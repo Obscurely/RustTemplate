@@ -36,25 +36,25 @@
     <li>
       <a href="# -about-the-project">About The Project</a>
       <ul>
-        <li><a href="#-features">Features</a></li>
-        <li><a href="#-video-showcase">Video showcase</a></li>
-        <li><a href="#-built-with">Built with</a></li>
+        <li><a href="#-features">💡 Features</a></li>
+        <li><a href="#-video-showcase">🎥 Video showcase</a></li>
+        <li><a href="#-built-with">🍔 Built with</a></li>
         <ul>
           <li><a href="#the-stock-libraries-and-these-awesome-third-party-ones">The stock libraries and these awesome third-party party ones</a></li>
         </ul>
       </ul>
     </li>
     <li>
-      <a href="#-getting-started">Getting Started</a>
+      <a href="#-getting-started">🏁 Getting Started</a>
       <ul>
-        <li><a href="#-running-the-program">Running the Program</a></li>
+        <li><a href="#-running-the-program">🏃 Running the Program</a></li>
         <ul>
-          <li><a href="#-windows">Windows</a></li>
+          <li><a href="#-windows">🪟 Windows</a></li>
           <ul>
             <li><a href="#portable-exe">Portable EXE</a></li>
             <li><a href="#installer">Installer</a></li>
           </ul>
-          <li><a href="#-linux">Linux</a></li>
+          <li><a href="#-linux">🐧 Linux</a></li>
           <ul>
             <li><a href="#portable-bin">Portable Bin</a></li>
             <li><a href="#appimage">AppImage</a></li>
@@ -63,33 +63,33 @@
             <li><a href="#deb-file">Deb File</a></li>
             <li><a href="#arch-pkg-file">Arch Pkg File</a></li>
           </ul>
-          <li><a href="#-macos">MacOS</a></li>
+          <li><a href="#-macos">🍎 MacOS</a></li>
           <ul>
             <li><a href="#portable-binary">Portable Bin</a></li>
             <li><a href="#app-folder">App Folder</a></li>
             <li><a href="#dmg-installer">DMG Installer</a></li>
             <li><a href="#homebrew">Homebrew</a></li>
           </ul>
-          <li><a href="#-all-platforms">All Platforms</a></li>
+          <li><a href="#-all-platforms">🚉 All Platforms</a></li>
         </ul>
-        <li><a href="#-compilation">Compilation</a></li>
+        <li><a href="#-compilation">🛠 Compilation</a></li>
       </ul>
     </li>
     <li>
-      <a href="#-usage">Usage</a>
+      <a href="#-usage">🪧 Usage</a>
       <ul>
         <li><a href="#basics">Basics</a></li>
         <li><a href="#advanced">Advanced</a></li>
       </ul>
     </li>
-    <li><a href="#-road-map">Road Map</a></li>
-    <li><a href="#-contributing">Contributing</a></li>
-    <li><a href="#faq">FAQ</a></li>
-    <li><a href="#-semver">Semver</a></li>
-    <li><a href="#-security">Security</a></li>
-    <li><a href="#-license">License</a></li>
-    <li><a href="#-contact">Contact</a></li>
-    <li><a href="#-acknowledgments">Acknowledgments</a></li>
+    <li><a href="#-road-map">🗾 Road Map</a></li>
+    <li><a href="#-contributing">💁 Contributing</a></li>
+    <li><a href="#faq">❓ FAQ</a></li>
+    <li><a href="#-semver">📟 Semver</a></li>
+    <li><a href="#-security">🔰 Security</a></li>
+    <li><a href="#-license">🪪 License</a></li>
+    <li><a href="#-contact">📧 Contact</a></li>
+    <li><a href="#-acknowledgments">🦾 Acknowledgments</a></li>
   </ol>
 </details>
 
