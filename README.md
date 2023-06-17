@@ -121,10 +121,12 @@ If you've got any questions please give the [FAQ](#faq) a check.
 
 ### 🏃 Running The Program
 
-- [Windows](#-windows)
-- [Linux](#-linux)
-- [MacOS](#-macos)
-- [All Platforms](#-all-platforms)
+| Platform                         | Versions        |
+| :------------------------------- | :-------------- |
+| [Windows](#-windows)             | 7 and above     |
+| [Linux](#-linux)                 | Anything really |
+| [MacOS](#-macos)                 | 10.15 and above |
+| [All Platforms](#-all-platforms) | All the above   |
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
