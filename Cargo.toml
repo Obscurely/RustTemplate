@@ -4,6 +4,7 @@ authors = ["Obscurely <adrian.obscurely@protonmail.com>"]
 version = "0.1.0"
 edition = "2021"
 rust-version = "1.69"                                                              # Minimum rust version
+resolver = "2"
 description = "CHANGEME_DESC"
 documentation = "https://github.com/Obscurely/CHANGEME_NAME/blob/master/README.md"
 repository = "https://github.com/Obscurely/CHANGEME_NAME"
@@ -12,6 +13,8 @@ categories = []                                                                 
 keywords = []                                                                      # CHANGEME_MANUAL
 readme = "README.md"
 license = "MIT"
+
+#═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 
 [package.metadata.deb]
 maintainer = "Obscurely <adrian.obscurely@protonmail.com>"
@@ -22,12 +25,16 @@ CHANGEME_DESC""""
 depends = "$auto"
 section = "CHANGEME_MANUAL"
 
+#═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
 [profile.release]
 strip = true      # Automatically strip symbols from the binary.
 opt-level = 3     # Optimize for speed.
 lto = true        # instructs the linker to optimize at the link stage
 codegen-units = 1 # Default is 16, the higher the faster compile time, but it may produce slower code.
 panic = "abort"   # Since all of the errors are  handled manually (should be), aborting and removing the panic code is nothing, but an improvement.
+
+#═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 
 [dependencies]
 # Great examples include:

@@ -28,3 +28,6 @@ Cargo.lock
 
 # Vim swap files
 *.swp
+
+# Folder config file
+[Dd]esktop.ini
