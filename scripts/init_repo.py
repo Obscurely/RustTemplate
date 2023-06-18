@@ -28,7 +28,6 @@ skip_dirs = [
     f"{cwd}{path_sep}.git",
     f"{cwd}{path_sep}.mypy_cache",
     f"{cwd}{path_sep}assets",
-    f"{cwd}{path_sep}docs",
     f"{cwd}{path_sep}fuzz{path_sep}artifacts",
     f"{cwd}{path_sep}fuzz{path_sep}corpus",
     f"{cwd}{path_sep}fuzz{path_sep}target",
@@ -82,8 +81,12 @@ vars = {
 }
 
 for file in target_files:
-    with open(file, "w+") as f:
-        contents = f.read()
-        for var in vars:
-            contents.replace(var, vars[var])
-        f.write(contents)
+    content = ""
+    with open(file, "r") as f:
+        content = f.read()
+
+    for var in vars:
+        content.replace(var, vars[var])
+
+    with open(file, "w") as f:
+        f.write(content)
