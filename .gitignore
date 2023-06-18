@@ -31,3 +31,6 @@ Cargo.lock
 
 # Folder config file
 [Dd]esktop.ini
+
+# Python
+.mypy_cache/
