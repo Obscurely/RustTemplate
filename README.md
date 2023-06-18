@@ -17,14 +17,14 @@
 <p align="center">
     CHANGEME_DESC
     <p>
-        <a href="https://github.com/Obscurely/CHANGEME_NAME/wiki"><strong>Explore the docs »</strong></a>
+        <a href="https://github.com/CHANGEME_USER/CHANGEME_NAME/wiki"><strong>Explore the docs »</strong></a>
         <br />
         <br />
-        <a href="https://github.com/Obscurely/CHANGEME_NAME#-video-showcase">View Demo</a>
+        <a href="https://github.com/CHANGEME_USER/CHANGEME_NAME#-video-showcase">View Demo</a>
         ·
-        <a href="https://github.com/Obscurely/CHANGEME_NAME/issues">Report Bug</a>
+        <a href="https://github.com/CHANGEME_USER/CHANGEME_NAME/issues">Report Bug</a>
         ·
-        <a href="https://github.com/Obscurely/CHANGEME_NAME/issues">Request Feature</a>
+        <a href="https://github.com/CHANGEME_USER/CHANGEME_NAME/issues">Request Feature</a>
     </p>
   </p>
 </div>
@@ -147,7 +147,7 @@ If you've got any questions please give the [FAQ](#faq) a check.
 
 #### Portable EXE
 
-1. Go to the [Releases Tab](https://github.com/Obscurely/CHANGEME_NAME/releases)
+1. Go to the [Releases Tab](https://github.com/CHANGEME_USER/CHANGEME_NAME/releases)
    and download the _CHANGEME_BIN-windows.exe_ file (might have to click show
    all).
 1. Double click the exe you just downloaded and there you go the program works.
@@ -158,7 +158,7 @@ If you've got any questions please give the [FAQ](#faq) a check.
 
 #### Installer
 
-1. Go to the [Releases Tab](https://github.com/Obscurely/CHANGEME_NAME/releases)
+1. Go to the [Releases Tab](https://github.com/CHANGEME_USER/CHANGEME_NAME/releases)
    and download the _CHANGEME_BIN-windows-installer.exe_ file (might have to
    click show all).
 1. Double click the installer and go through it as you would with any other
@@ -186,7 +186,7 @@ If you've got any questions please give the [FAQ](#faq) a check.
 
 #### Portable Bin
 
-1. Go to the [Releases Tab](https://github.com/Obscurely/CHANGEME_NAME/releases)
+1. Go to the [Releases Tab](https://github.com/CHANGEME_USER/CHANGEME_NAME/releases)
    and download the _CHANGEME_BIN-linux_ file.
 1. Double click the bin you just downloaded and there you go the program works.
 1. Might wanna take a look at the [Usage Tab](#-usage) if you don't understand
@@ -199,7 +199,7 @@ If you've got any questions please give the [FAQ](#faq) a check.
 
 #### AppImage
 
-1. Go to the [Releases Tab](https://github.com/Obscurely/CHANGEME_NAME/releases)
+1. Go to the [Releases Tab](https://github.com/CHANGEME_USER/CHANGEME_NAME/releases)
    and download the _CHANGEME_BIN-linux.AppImage_ file.
 1. Double click the AppImage you download and there you go the program just
    works. You may want to install
@@ -265,7 +265,7 @@ b. Manually cloning and building it from AUR
 
 You are using NixOS, don't worry I got you bro.
 
-1. Go to the [Releases Tab](https://github.com/Obscurely/CHANGEME_NAME/releases)
+1. Go to the [Releases Tab](https://github.com/CHANGEME_USER/CHANGEME_NAME/releases)
    and download the _CHANGEME_BIN-linux.nix_ file.
 1. If you use flakes then put it in your pkgs folder, and up-top add your tag
    (like _my_). If you don't just add the code in your default.nix file and
@@ -279,7 +279,7 @@ You should use the app image. This does not provide a desktop file, you'll have
 to run it from the command-line. It's here just as another means if needed. I
 will try to make a ppa eventually.
 
-1. Go to the [Releases Tab](https://github.com/Obscurely/CHANGEME_NAME/releases)
+1. Go to the [Releases Tab](https://github.com/CHANGEME_USER/CHANGEME_NAME/releases)
    and download the _CHANGEME_BIN-linux.deb_ file.
 1. Open a terminal in the folder where your download is and run the following
    command:
@@ -301,7 +301,7 @@ will try to make a ppa eventually.
 You shouldn't use this method, install the CHANGEME_BIN-bin AUR pkg instead.
 This is here just as another means if needed.
 
-1. Go to the [Releases Tab](https://github.com/Obscurely/CHANGEME_NAME/releases)
+1. Go to the [Releases Tab](https://github.com/CHANGEME_USER/CHANGEME_NAME/releases)
    and download the _CHANGEME_BIN-linux.pkg.tar.zst_ file.
 1. From you Arch Linux command-line run the following command:
 
@@ -328,7 +328,7 @@ This is here just as another means if needed.
 
 #### Portable binary
 
-1. Go to the [Releases Tab](https://github.com/Obscurely/CHANGEME_NAME/releases)
+1. Go to the [Releases Tab](https://github.com/CHANGEME_USER/CHANGEME_NAME/releases)
    and download the _CHANGEME_BIN-macos_ file.
 1. Double click the bin you just downloaded and there you go the program works.
 1. Might wanna take a look at the [Usage Tab](#-usage) if you don't understand
@@ -341,7 +341,7 @@ This is here just as another means if needed.
 Damn simillar to [portable binary](#portable-binary), only real difference is
 this has an icon.
 
-1. Go to the [Releases Tab](https://github.com/Obscurely/CHANGEME_NAME/releases)
+1. Go to the [Releases Tab](https://github.com/CHANGEME_USER/CHANGEME_NAME/releases)
    and download the _CHANGEME_BIN-macos-app.tar.gz_ file.
 1. Use your archive manager or run in the terminal the following command:
 
@@ -358,7 +358,7 @@ this has an icon.
 
 Works just like any other dmg installer you've used.
 
-1. Go to the [Releases Tab](https://github.com/Obscurely/CHANGEME_NAME/releases)
+1. Go to the [Releases Tab](https://github.com/CHANGEME_USER/CHANGEME_NAME/releases)
    and download the _CHANGEME_BIN-macos-installer.dmg_ file.
 1. Double click to run the dmg.
 1. Drag the app folder over the _Applications_ folder.
@@ -383,7 +383,7 @@ it's really easy.
 1. You'll need to add my tap repository, run the following command for that:
 
    ```shell
-   brew tap Obscurely/tap
+   brew tap CHANGEME_USER/tap
    ```
 
 1. Install the pkg.
@@ -453,7 +453,7 @@ use nix).
    installed, like this:
 
    ```shell
-   git clone https://github.com/Obscurely/CHANGEME_NAME.git
+   git clone https://github.com/CHANGEME_USER/CHANGEME_NAME.git
    ```
 
    Otherwise in the right up side of the repository page you will see a download
@@ -502,14 +502,14 @@ CHANGEME_MANUAL
 ## 🗾 Road Map
 
 The roadmap (kanban board) is located up top in the projects tab or at
-[this link](https://github.com/users/Obscurely/projects/CHANGEME_MANUAL).
+[this link](https://github.com/users/CHANGEME_USER/projects/CHANGEME_MANUAL).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💁 Contributing
 
-<a href="https://github.com/Obscurely/CHANGEME_NAME/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Obscurely/CHANGEME_NAME" />
+<a href="https://github.com/CHANGEME_USER/CHANGEME_NAME/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=CHANGEME_USER/CHANGEME_NAME" />
 </a>
 
 Contributions are always welcome!
@@ -555,9 +555,9 @@ have fun :)
 ## 📧 Contact
 
 Either post an issue in the
-[Issues Tab](https://github.com/Obscurely/CHANGEME_NAME/issues) or contact me at
+[Issues Tab](https://github.com/CHANGEME_USER/CHANGEME_NAME/issues) or contact me at
 this email address if you have more to say:
-[obscurely.message@protonmail.com](mailto:obscurely.message@protonmail.com)
+[CHANGEME_SMAIL](mailto:CHANGEME_SMAIL)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -577,15 +577,15 @@ this email address if you have more to say:
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/Obscurely/CHANGEME_NAME.svg?style=for-the-badge
-[contributors-url]: https://github.com/Obscurely/CHANGEME_NAME/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Obscurely/CHANGEME_NAME.svg?style=for-the-badge
-[forks-url]: https://github.com/Obscurely/CHANGEME_NAME/network/members
-[stars-shield]: https://img.shields.io/github/stars/Obscurely/CHANGEME_NAME.svg?style=for-the-badge
-[stars-url]: https://github.com/Obscurely/CHANGEME_NAME/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Obscurely/CHANGEME_NAME.svg?style=for-the-badge
-[issues-url]: https://github.com/Obscurely/CHANGEME_NAME/issues
-[license-shield]: https://img.shields.io/github/license/Obscurely/CHANGEME_NAME.svg?style=for-the-badge
-[license-url]: https://github.com/Obscurely/CHANGEME_NAME/blob/master/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/CHANGEME_USER/CHANGEME_NAME.svg?style=for-the-badge
+[contributors-url]: https://github.com/CHANGEME_USER/CHANGEME_NAME/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/CHANGEME_USER/CHANGEME_NAME.svg?style=for-the-badge
+[forks-url]: https://github.com/CHANGEME_USER/CHANGEME_NAME/network/members
+[stars-shield]: https://img.shields.io/github/stars/CHANGEME_USER/CHANGEME_NAME.svg?style=for-the-badge
+[stars-url]: https://github.com/CHANGEME_USER/CHANGEME_NAME/stargazers
+[issues-shield]: https://img.shields.io/github/issues/CHANGEME_USER/CHANGEME_NAME.svg?style=for-the-badge
+[issues-url]: https://github.com/CHANGEME_USER/CHANGEME_NAME/issues
+[license-shield]: https://img.shields.io/github/license/CHANGEME_USER/CHANGEME_NAME.svg?style=for-the-badge
+[license-url]: https://github.com/CHANGEME_USER/CHANGEME_NAME/blob/master/LICENSE
 [crates-shield]: https://img.shields.io/crates/v/CHANGEME_BIN.svg?style=for-the-badge
 [crates-url]: https://crates.io/crates/CHANGEME_BIN

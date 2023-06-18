@@ -13,7 +13,7 @@ let
   }.${stdenv.hostPlatform.system};
 
   src = fetchurl {
-    url = "https://github.com/Obscurely/CHANGEME_NAME/releases/download/v${version}-stable/CHANGEME_BIN-linux.AppImage";
+    url = "https://github.com/CHANGEME_USER/CHANGEME_NAME/releases/download/v${version}-stable/CHANGEME_BIN-linux.AppImage";
     inherit sha256;
   };
 
@@ -37,7 +37,7 @@ appimageTools.wrapType2 rec {
   '';
 
   meta = {
-    homepage = "https://github.com/Obscurely/CHANGEME_NAME";
+    homepage = "https://github.com/CHANGEME_USER/CHANGEME_NAME";
     description = "CHANGEME_DESC";
     license = lib.licenses.mit;
     platforms = lib.platforms.linux;

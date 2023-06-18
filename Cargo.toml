@@ -1,14 +1,14 @@
 [package]
 name = "changeme_bin"
-authors = ["Obscurely <adrian.obscurely@protonmail.com>"]
+authors = ["CHANGEME_USER <CHANGEME_PMAIL>"]
 version = "0.1.0"
 edition = "2021"
 rust-version = "1.69"                                                              # Minimum rust version
 resolver = "2"
 description = "CHANGEME_DESC"
-documentation = "https://github.com/Obscurely/CHANGEME_NAME/blob/master/README.md"
-repository = "https://github.com/Obscurely/CHANGEME_NAME"
-homepage = "https://github.com/Obscurely/CHANGEME_NAME"
+documentation = "https://github.com/CHANGEME_USER/CHANGEME_NAME/blob/master/README.md"
+repository = "https://github.com/CHANGEME_USER/CHANGEME_NAME"
+homepage = "https://github.com/CHANGEME_USER/CHANGEME_NAME"
 categories = []                                                                    # CHANGEME_MANUAL
 keywords = []                                                                      # CHANGEME_MANUAL
 readme = "README.md"
@@ -17,8 +17,8 @@ license = "MIT"
 #═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 
 [package.metadata.deb]
-maintainer = "Obscurely <adrian.obscurely@protonmail.com>"
-copyright = "2023, 2023 <adrian.obscurely@protonmail.com>"
+maintainer = "CHANGEME_USER <CHANGEME_PMAIL>"
+copyright = "2023, 2023 <CHANGEME_PMAIL>"
 license-file = ["LICENSE", "0"]
 extended-description = """\
 CHANGEME_DESC""""

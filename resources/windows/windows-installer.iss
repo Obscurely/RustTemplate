@@ -3,8 +3,8 @@
 
 #define MyAppName "CHANGEME_NAME"
 #define MyAppVersion "VERSION_PLACEHOLDER"
-#define MyAppPublisher "Obscurely"
-#define MyAppURL "https://www.github.com/Obscurely/CHANGEME_NAME"
+#define MyAppPublisher "CHANGEME_USER"
+#define MyAppURL "https://www.github.com/CHANGEME_USER/CHANGEME_NAME"
 #define MyAppExeName "CHANGEME_BIN.exe"
 
 [Setup]

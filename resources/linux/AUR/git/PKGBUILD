@@ -1,15 +1,15 @@
-# Maintainer: Obscurely <adrian.obscurely@protonmail.com>
+# Maintainer: CHANGEME_USER <CHANGEME_PMAIL>
 pkgname=CHANGEME_BIN-git
 pkgver=PKGVER-PLACEHOLDER
 pkgrel=1
 pkgdesc="CHANGEME_DESC"
 arch=('x86_64')
-url="https://github.com/Obscurely/CHANGEME_NAME"
+url="https://github.com/CHANGEME_USER/CHANGEME_NAME"
 license=('GPL3')
 makedepends=('git' 'rust' 'cargo' 'binutils')
 provides=('CHANGEME_BIN-git')
 conflicts=('CHANGEME_BIN-bin' 'CHANGEME_BIN')
-source=('git+https://github.com/Obscurely/CHANGEME_NAME')
+source=('git+https://github.com/CHANGEME_USER/CHANGEME_NAME')
 sha256sums=('SKIP')
 
 pkgver() {

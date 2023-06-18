@@ -17,7 +17,7 @@ or data, as well as from the disruption or misdirection of the services they
 provide. (Source: [Wikipedia](https://en.wikipedia.org/wiki/Computer_security))
 
 If you believe you have found a security vulnerability in any of
-[Obscurely's](https://github.com/Obscurely) repository that meets the definition
+[CHANGEME_USER's](https://github.com/CHANGEME_USER) repository that meets the definition
 below please report it to us as described below.
 
 Vulnerabilities are flaws in a computer system that weaken the overall security
@@ -35,7 +35,7 @@ known as the attack surface. (Source:
 **Please do not report security vulnerabilities through public GitHub issues.**
 
 Instead, please report it by sending an email to
-[obscurely.message@protonmail.com](mailto:obscurely.message@protonmail.com)
+[CHANGEME_SMAIL](mailto:CHANGEME_SMAIL)
 
 You should receive a response within 24 hours. If for some reason you do not,
 please resend that email to ensure I received your original message. I may not

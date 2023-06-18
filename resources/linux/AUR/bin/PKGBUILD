@@ -1,15 +1,15 @@
-# Maintainer: Obscurely <adrian.obscurely@protonmail.com>
+# Maintainer: CHANGEME_USER <CHANGEME_PMAIL>
 pkgname=CHANGEME_BIN-bin
 pkgver=PKGVER-PLACEHOLDER
 pkgrel=1
 epoch=
 pkgdesc="CHANGEME_DESC"
 arch=('x86_64')
-url="https://github.com/Obscurely/CHANGEME_NAME"
+url="https://github.com/CHANGEME_USER/CHANGEME_NAME"
 license=('MIT')
 provides=('CHANGEME_BIN-bin')
 conflicts=('CHANGEME_BIN' 'CHANGEME_BIN-git')
-source=("https://github.com/Obscurely/CHANGEME_NAME/releases/download/v${pkgver}-stable/CHANGEME_BIN-linux.tar.gz")
+source=("https://github.com/CHANGEME_USER/CHANGEME_NAME/releases/download/v${pkgver}-stable/CHANGEME_BIN-linux.tar.gz")
 sha256sums=("SHA-PLACEHOLDER")
 
 package() {
