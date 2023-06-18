@@ -31,6 +31,7 @@ skip_dirs = [
     f"{cwd}{path_sep}fuzz{path_sep}artifacts",
     f"{cwd}{path_sep}fuzz{path_sep}corpus",
     f"{cwd}{path_sep}fuzz{path_sep}target",
+    f"{cwd}{path_sep}scripts",
     f"{cwd}{path_sep}target",
 ]
 
