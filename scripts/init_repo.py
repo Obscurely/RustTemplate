@@ -87,7 +87,7 @@ for file in target_files:
         content = f.read()
 
     for var in vars:
-        content.replace(var, vars[var])
+        content = content.replace(var, vars[var])
 
     with open(file, "w") as f:
         f.write(content)
