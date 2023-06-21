@@ -77,10 +77,12 @@ vars = {
     "CHANGEME_USER": user_name,
     "CHANGEME_NAME": repo_name,
     "CHANGEME_BIN": repo_name.lower(),
+    "changeme_bin": repo_name.lower(),
     "CHANGEME_PMAIL": pmail,
     "CHANGEME_SMAIL": smail,
 }
 
+# Replace the content
 for file in target_files:
     content = ""
     with open(file, "r") as f:
@@ -91,3 +93,7 @@ for file in target_files:
 
     with open(file, "w") as f:
         f.write(content)
+
+# Rename folders & files
+for file in target_files:
+    os.rename(file, file.replace("CHANGEME", vars["CHANGEME_NAME"]))
