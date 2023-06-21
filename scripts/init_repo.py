@@ -94,6 +94,33 @@ for file in target_files:
     with open(file, "w") as f:
         f.write(content)
 
+# Get all dirs list to rename the ones needed
+target_dirs = []
+
+for path, dirs, files in os.walk(cwd):
+    stop = 0
+    for dir in skip_dirs:
+        if dir in path:
+            stop = 1
+            continue
+
+    if stop == 1:
+        continue
+
+    for dir in dirs:
+        target_dirs.append(os.path.join(path, dir))
+
 # Rename folders & files
 for file in target_files:
-    os.rename(file, file.replace("CHANGEME", vars["CHANGEME_NAME"]))
+    file_split = file.split(path_sep)
+    if "CHANGEME" in file_split[-1]:
+        file_split[-1] = file_split[-1].replace("CHANGEME", vars["CHANGEME_NAME"])
+        new_file = path_sep.join(file_split)
+        os.rename(file, new_file)
+
+for dir in target_dirs:
+    dir_split = dir.split(path_sep)
+    if "CHANGEME" in dir_split[-1]:
+        dir_split[-1] = dir_split[-1].replace("CHANGEME", vars["CHANGEME_NAME"])
+        new_dir = path_sep.join(dir_split)
+        os.rename(dir, new_dir)
