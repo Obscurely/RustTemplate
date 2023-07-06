@@ -1,5 +1,6 @@
-import shutil
 import glob
+import shutil
+
 from PIL import Image
 
 

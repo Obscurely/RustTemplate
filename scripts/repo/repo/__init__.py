@@ -1,8 +1,9 @@
 import os
 import platform
 import sys
-from update_logo import update_logo
+
 from init_repo import init_repo
+from update_logo import update_logo
 
 # Get current directory
 cwd = os.getcwd()
