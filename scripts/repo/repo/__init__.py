@@ -3,6 +3,7 @@ import platform
 import sys
 
 from init_repo import init_repo
+from repo.update_desc import update_desc
 from update_logo import update_logo
 
 # Get current directory
@@ -42,5 +43,7 @@ if run_arg == "init":
     init_repo(path_sep, cwd)
 elif run_arg == "ulogo":
     update_logo(path_sep, cwd)
+elif run_arg == "udesc":
+    update_desc(path_sep, cwd)
 else:
     print("Argument not recognized!")

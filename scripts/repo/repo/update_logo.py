@@ -35,7 +35,8 @@ def update_logo(path_sep: str, cwd: str):
     macos_app_folder = glob.glob(f"resources{path_sep}macos{path_sep}*.app")[0]
     shutil.copyfile(
         f"assets{path_sep}images{path_sep}logo.icns",
-        f"{macos_app_folder}{path_sep}Contents{path_sep}Resources{path_sep}AppIcon.icns",
+        f"{macos_app_folder}{path_sep}Contents{path_sep}Resources"
+        "{path_sep}AppIcon.icns",
     )
 
     # Copy png logo to appdir linux folder
@@ -53,8 +54,12 @@ def update_logo(path_sep: str, cwd: str):
         for size in sizes:
             resized = logo.resize((size, size))
             resized.save(
-                f"{linux_appdir}{path_sep}usr{path_sep}share{path_sep}icons{path_sep}hicolor{path_sep}{size}x{size}{path_sep}apps{path_sep}{bin_name}.png"
+                f"{linux_appdir}{path_sep}usr{path_sep}share{path_sep}icons"
+                "{path_sep}hicolor{path_sep}{size}x{size}{path_sep}apps"
+                "{path_sep}{bin_name}.png"
             )
             resized.save(
-                f"resources{path_sep}linux{path_sep}desktop{path_sep}icons{path_sep}hicolor{path_sep}{size}x{size}{path_sep}apps{path_sep}{bin_name}.png"
+                f"resources{path_sep}linux{path_sep}desktop{path_sep}icons"
+                "{path_sep}hicolor{path_sep}{size}x{size}{path_sep}apps"
+                "{path_sep}{bin_name}.png"
             )
