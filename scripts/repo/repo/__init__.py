@@ -3,7 +3,7 @@ import platform
 import sys
 
 from init_repo import init_repo
-from repo.update_desc import update_desc
+from update_desc import update_desc
 from update_logo import update_logo
 
 # Get current directory

@@ -5,7 +5,7 @@ def update_desc(path_sep: str, cwd: str):
     # Load desc
     desc = ""
     with open("scripts/DESC", "r") as f:
-        desc = f.read()
+        desc = f.read().replace("\n", "")
 
     # Directories we can ignore
     skip_dirs = [
