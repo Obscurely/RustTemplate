@@ -1,0 +1,80 @@
+---
+name: Release
+on:
+  push:
+    tags: ["v[0-9]+.[0-9]+.[0-9]+*"]
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  CARGO_TERM_COLOR: always
+jobs:
+  macos:
+    runs-on: macos-11
+    steps:
+      - uses: actions/checkout@v3
+      - name: Dependencies
+        run: brew install create-dmg
+      - name: Test
+        run: cargo test --release
+      - name: Build
+        run: cargo build --release
+      - name: Prepare
+        run: mkdir -p target/osx
+      - name: Copy bin
+        run: |
+          BIN_NAME=$(grep -o -P '(?<=name = ").*(?=")' Cargo.toml)
+          cp "target/release/$BIN_NAME" "target/osx/$BIN_NAME-macos"
+      - name: Dotapp
+        run: |
+          BIN_NAME=$(grep -o -P '(?<=name = ").*(?=")' Cargo.toml)
+          cd resources/macos/
+          sed -i "s/VERSION_PLACEHOLDER/${GITHUB_REF##*/}/g" "${GITHUB_REPOSITORY##*/}.app/Contents/Info.plist"
+          tar -czf "$BIN_NAME-macos-app.tar.gz" "${GITHUB_REPOSITORY##*/}.app/"
+          cd ../../
+          cp "resources/macos/$BIN_NAME-macos-app.tar.gz" "target/osx/$BIN_NAME-macos-app.tar.gz"
+      - name: DMG installer
+        run: |
+          cd resources/macos
+          ./make-dmg.sh
+          cd ../../
+      - name: Archive for Homebrew
+        run: |
+          BIN_NAME=$(grep -o -P '(?<=name = ").*(?=")' Cargo.toml)
+          cp LICENSE target/osx/LICENSE
+          cp README.md target/osx/README.md
+          cd target/osx/
+          cp "$BIN_NAME-macos" "$BIN_NAME"
+          tar -czf "$BIN_NAME-macos.tar.gz" "$BIN_NAME" LICENSE README.md
+          rm -f README.md LICENSE $BIN_NAME
+          cd ../../
+      - if: contains(github.ref, 'stable')
+        name: Homebrew
+        run: |
+          # Prepare ruby file
+          BIN_NAME=$(grep -o -P '(?<=name = ").*(?=")' Cargo.toml)
+          PARSED_VERSION=$(echo "${GTIHUB_REF##*/}" | grep -o -P "(?<=v).*(?=-)")
+          cd target/osx/
+          TAR_SHA=$(sha256sum "$BIN_NAME-macos.tar.gz" | sed -e "s/  $BIN_NAME-macos.tar.gz//g")
+          cd ../../
+          sed -i "s/VERSION_PLACEHOLDER/$PARSED_VERSION/g" "resources/macos/$BIN_NAME.rb"
+          sed -i "s/SHA_PLACEHOLDER/$TAR_SHA/g" "resources/macos/$BIN_NAME.rb"
+          # Update ruby file in tap repo
+          git clone "https://github.com/$GITHUB_REPOSITORY_OWNER/homebrew-tap"
+          mkdir -p homebrew-tap/Formula
+          cp "resources/macos/$BIN_NAME.rb" "homebrew-tap/Formula/$BIN_NAME.rb"
+      - if: contains(github.ref, 'stable')
+        name: Commit homebrew file
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          source-directory: "homebrew-tap"
+          destination-github-username: ${{ github.repository_owner }}
+          destination-repository-name: "homebrew-tap"
+          target-branch: master
+      - name: Upload assets
+        uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          prerelease: false
+          files: |
+            target/osx/*

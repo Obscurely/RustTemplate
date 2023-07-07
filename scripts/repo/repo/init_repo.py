@@ -93,7 +93,11 @@ def init_repo(path_sep: str, cwd: str):
     for file in target_files:
         file_split = file.split(path_sep)
         if "CHANGEME" in file_split[-1]:
-            file_split[-1] = file_split[-1].replace("CHANGEME", vars["CHANGEME_NAME"])
+            file_split[-1] = (
+                file_split[-1]
+                .replace("CHANGEME", vars["CHANGEME_NAME"])
+                .replace("CHANGEME_BIN", vars["CHANGEME_BIN"])
+            )
             new_file = path_sep.join(file_split)
             os.rename(file, new_file)
 
