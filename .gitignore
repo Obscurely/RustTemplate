@@ -34,5 +34,7 @@ Cargo.lock
 
 # Python
 .mypy_cache/
-scripts/repo/.mypy_cache/
-scripts/repo/repo/__pycache__
+scripts/.mypy_cache/
+scripts/__pycache__/
+scripts/lib/.mypy_cache/
+scripts/lib/__pycache__/

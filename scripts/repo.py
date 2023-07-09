@@ -2,9 +2,9 @@ import os
 import platform
 import sys
 
-from init_repo import init_repo
-from update_desc import update_desc
-from update_logo import update_logo
+from lib.init_repo import init_repo
+from lib.update_desc import update_desc
+from lib.update_logo import update_logo
 
 # Get current directory
 cwd = os.getcwd()
@@ -15,15 +15,13 @@ path_sep = ""
 if platform.system() == "Windows":
     path_split = cwd.split("\\")
     path_sep = "\\"
-    if "repo" == path_split[-1]:
-        path_split.pop()
+    if "scripts" == path_split[-1]:
         path_split.pop()
         os.chdir("\\".join(path_split))
 else:
     path_split = cwd.split("/")
     path_sep = "/"
-    if "repo" == path_split[-1]:
-        path_split.pop()
+    if "scripts" == path_split[-1]:
         path_split.pop()
         os.chdir("/".join(path_split))
 
@@ -35,7 +33,15 @@ print(cwd)
 try:
     run_arg = sys.argv[1]
 except IndexError:
-    print("No arguments passed!")
+    print(
+        """
+Available arguments:
+
+init  - change variables according to your repo.
+ulogo - take assets/logo.png as base, convert it and copy it anywhere needed
+udesc - take the description in scripts/data/DESC and update it everywhere.
+    """
+    )
     exit()
 
 # Main script run
