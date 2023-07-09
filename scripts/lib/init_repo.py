@@ -43,12 +43,12 @@ def init_repo(path_sep: str, cwd: str):
 
     # Get primary email address
     pmail = ""
-    with open(f"{cwd}{path_sep}scripts{path_sep}PMAIL", "r") as f:
+    with open(f"{cwd}{path_sep}scripts{path_sep}data{path_sep}PMAIL", "r") as f:
         pmail = f.readlines()[0].replace("\n", "")
 
     # Get secondary email address
     smail = ""
-    with open(f"{cwd}{path_sep}scripts{path_sep}SMAIL", "r") as f:
+    with open(f"{cwd}{path_sep}scripts{path_sep}data{path_sep}SMAIL", "r") as f:
         smail = f.readlines()[0].replace("\n", "")
 
     # Create a dictionary with the vars

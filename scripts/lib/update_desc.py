@@ -4,7 +4,7 @@ import os
 def update_desc(path_sep: str, cwd: str):
     # Load desc
     desc = ""
-    with open("scripts/DESC", "r") as f:
+    with open(f"scripts{path_sep}data{path_sep}DESC", "r") as f:
         desc = f.read().replace("\n", "")
 
     # Directories we can ignore
