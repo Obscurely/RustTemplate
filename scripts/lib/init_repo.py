@@ -28,7 +28,12 @@ def init_repo(path_sep: str, cwd: str):
             continue
 
         for file in files:
-            if file != "Cargo.lock":
+            if (
+                file != "Cargo.lock"
+                and ".png" not in file
+                and ".ico" not in file
+                and ".icns" not in file
+            ):
                 target_files.append(os.path.join(path, file))
 
     # Get user name and repo name
