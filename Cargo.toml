@@ -13,6 +13,7 @@ categories = []                                                                 
 keywords = []                                                                      # CHANGEME_MANUAL
 readme = "README.md"
 license = "MIT"
+build = "build.rs"
 
 #═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 
@@ -33,6 +34,11 @@ opt-level = 3     # Optimize for speed.
 lto = true        # instructs the linker to optimize at the link stage
 codegen-units = 1 # Default is 16, the higher the faster compile time, but it may produce slower code.
 panic = "abort"   # Since all of the errors are  handled manually (should be), aborting and removing the panic code is nothing, but an improvement.
+
+#═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+[build-dependencies]
+winres = "0.1.12"
 
 #═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 
