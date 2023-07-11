@@ -10,10 +10,21 @@ env:
 permissions:
   contents: write
 jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create release
+        uses: "softprops/action-gh-release@v1"
+        with:
+          generate_release_notes: true
+          name: ${{ github.event.repository.name }} ${{ github.ref_name }}
+          prerelease: false
+          body: "Explicit changelog comming soon!"
   macos:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
+      - uses: dtolnay/rust-toolchain@stable
       - name: Dependencies
         run: |
           brew install create-dmg
@@ -78,8 +89,47 @@ jobs:
       - name: Upload assets
         uses: "softprops/action-gh-release@v1"
         with:
-          generate_release_notes: true
-          name: ${{ github.event.repository.name }} ${{ github.ref_name }}
-          prerelease: false
           files: |
             target/osx/*
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: "Install Rust"
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          target: "x86_64-pc-windows-msvc"
+      - name: Install cargo-wix
+        shell: bash
+        run: cargo install cargo-wix
+      - name: Build
+        run: cargo build --release
+      - name: Prepare
+        shell: bash
+        run: mkdir -p target/win
+      - name: Copy bin
+        shell: bash
+        run: |
+          BIN_NAME=$(LC_ALL=en_US.utf8 grep -o -P '(?<=name = ").*(?=")' Cargo.toml)
+          cp "target/release/$BIN_NAME.exe" "target/win/$BIN_NAME-windows.exe"
+      - name: Setup Wix
+        shell: bash
+        run: |
+          mkdir wix
+          cp "resources/windows/main.wxs" "wix/main.wxs"
+          cp "resources/windows/License.rtf" "wix/License.rtf"
+      - name: Run cargo wix
+        shell: pwsh
+        run: |
+          cargo wix --nocapture
+      - name: Copy setup
+        shell: bash
+        run: |
+          BIN_NAME=$(LC_ALL=en_US.utf8 grep -o -P '(?<=name = ").*(?=")' Cargo.toml)
+          VER=$(LC_ALL=en_US.utf8 grep -o -P '(?<=version = ").*(?=")' Cargo.toml | head -n 1)
+          cp "target/wix/$BIN_NAME-$VER-x86_64.msi" "target/win/$BIN_NAME-windows-setup.msi"
+      - name: Upload assets
+        uses: "softprops/action-gh-release@v1"
+        with:
+          files: |
+            target/win/*

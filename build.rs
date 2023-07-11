@@ -1,8 +1,6 @@
 fn main() {
     #[cfg(windows)]
     {
-        let mut res = winres::WindowsResource::new();
-        res.set_icon("assets\\images\\logo.ico");
-        res.compile().unwrap();
+        embed_resource::compile("resources\\windows\\resources.rc", embed_resource::NONE);
     }
 }
