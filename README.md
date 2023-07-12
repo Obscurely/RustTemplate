@@ -180,7 +180,6 @@ If you've got any questions please give the [FAQ](#faq) a check.
 - [AUR](#aur)
 - [Nix File](#nix-file)
 - [Deb File](#deb-file)
-- [Arch Pkg File](#arch-pkg-file)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -295,23 +294,6 @@ will try to make a ppa eventually.
    extract linux/desktop/CHANGEME_NAME.desktop to
    $HOME/.local/share/applications and linux/desktop/icons to
    $HOME/.local/share/icons in order to have a start-menu shortcut.
-
-#### Arch Pkg File
-
-You shouldn't use this method, install the CHANGEME_BIN-bin AUR pkg instead.
-This is here just as another means if needed.
-
-1. Go to the [Releases Tab](https://github.com/CHANGEME_USER/CHANGEME_NAME/releases)
-   and download the _CHANGEME_BIN-linux.pkg.tar.zst_ file.
-1. From you Arch Linux command-line run the following command:
-
-   ```shell
-   sudo pacman -U CHANGEME_BIN-linux.pkg.tar.zst
-   ```
-
-1. Search for CHANGEME_NAME in your app launcher and launch it.
-1. Might wanna take a look at the [Usage Tab](#-usage) if you don't understand
-   something about it.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

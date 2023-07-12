@@ -24,7 +24,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: dtolnay/rust-toolchain@stable 
+      - uses: dtolnay/rust-toolchain@stable
       - name: Dependencies
         run: |
           brew install create-dmg
@@ -37,6 +37,8 @@ jobs:
           VER=$(echo "${GITHUB_REF##*/}" | gsed -e 's/v//g' | gsed -e 's/-.*//g')
           gsed -i "0,/version = \".*/s//version = \"$VER\"/" Cargo.toml
           mkdir -p target/osx
+      - name: Run tests
+        run: cargo test --all-features --workspace
       - name: Build
         run: cargo build --release
       - name: Copy bin
@@ -113,6 +115,8 @@ jobs:
       - name: Install cargo-wix
         shell: bash
         run: cargo install cargo-wix
+      - name: Run tests
+        run: cargo test --all-features --workspace
       - name: Build
         run: cargo build --release
       - name: Copy bin
@@ -154,6 +158,8 @@ jobs:
           mkdir -p target/linux
       - name: Build
         run: cargo build --release
+      - name: Run tests
+        run: cargo test --all-features --workspace
       - name: Copy bin
         run: |
           BIN_NAME=$(grep -o -P '(?<=name = ").*(?=")' Cargo.toml)
@@ -239,3 +245,22 @@ jobs:
         with:
           files: |
             target/linux/*
+  cratesio:
+    if: "contains(github.ref, 'stable')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Prepare
+        run: |
+          VER=$(echo "${GITHUB_REF##*/}" | sed -e 's/v//g' | sed -e 's/-.*//g')
+          sed -i "0,/version = \".*/s//version = \"$VER\"/" Cargo.toml
+          mkdir -p target/linux
+      - name: Run tests
+        run: cargo test --all-features --workspace
+      - name: Build
+        run: cargo build --release
+      - name: Publish to crates.io
+        run: cargo publish --token "${CRATES_TOKEN}" --allow-dirty
+        env:
+          CRATES_TOKEN: ${{ secrets.CRATES_TOKEN }}
