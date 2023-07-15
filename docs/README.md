@@ -1,7 +1,6 @@
-# CHANGEME_NAME
+# Documentation
 
-**In-depth documentation.**
+**[Link to project on GitHub](https://github.com/CHANGEME_USER/CHANGEME_NAME)**
 
-- [README.md](../README.md) - The project's README
 - [Template](TEMPLATE.md) - Instructions to use the Template this project is
   based on
