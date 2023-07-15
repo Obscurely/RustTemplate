@@ -2,4 +2,4 @@
 
 **In-depth documentation.**
 
-- [SOME_FILE.md](#SOME_FILE.md)
+- [Template](Template.md)
