@@ -1,11 +1,11 @@
 # How to Start
 
-1. Create a new GitHub (only github works) repository from
+1. Create a new GitHub (only GitHub works) repository from
    [this template](https://docs.github.com/en/enterprise-cloud@latest/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template)
 
 1. Clone your new repository & cd into it
 
-   ```
+   ```shell
    git clone https://github.com/{YOUR_USERNAME}/{YOUR_REPOSITORY_NAME}
    cd {YOUR_REPOSITORY_NAME}
    ```
@@ -15,12 +15,12 @@
    - On Windows
 
      a. Download & run the installer from their
-     [official website](https://www.python.org/downloads/windows/)
+     [official site](https://www.python.org/downloads/windows/)
 
      b. Install it using winget (replace 3.11 with whatever version is the
      latest)
 
-     ```
+     ```shell
      winget install -e --id Python.Python.3.11
      ```
 
@@ -31,31 +31,31 @@
 
      Use your distribution's package manager, for example on Arch Linux:
 
-     ```
+     ```shell
      sudo pacman -Sy python3
      ```
 
      or if you are on NixOS just do the following and skip the next step
 
-     ```
+     ```shell
      nix-shell
      ```
 
    - On macOS
 
      a. Download & run the installer from their
-     [official website](https://www.python.org/downloads/macos/)
+     [official site](https://www.python.org/downloads/macos/)
 
      b. Install it using homebrew ([install homebrew](https://brew.sh/))
 
-     ```
+     ```shell
      brew install python3
      ```
 
 1. Install/Upgrade pip and install the
    [Pillow](https://pypi.org/project/Pillow/) library
 
-   ```
+   ```shell
    python3 -m pip install --upgrade pip
    python3 -m pip install --upgrade Pillow
    ```
@@ -73,7 +73,7 @@
 
 1. Run the following command in the root of your project
 
-   ```
+   ```shell
    python3 scripts/repo.py init
    ```
 

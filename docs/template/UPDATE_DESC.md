@@ -6,7 +6,7 @@ should.**
 **!!! This command can only be run once, after that you'll have to change it
 manually !!!**
 
-This is the short description that you would put in your github repository about
+This is the short description that you would put in your GitHub repository about
 section.
 
 1. Put your desired description in scripts/data/DESC.
@@ -15,7 +15,7 @@ section.
 
 1. In the root of your repository run the following command
 
-   ```
+   ```shell
    python3 scripts/repo.py udesc
    ```
 

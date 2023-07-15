@@ -7,11 +7,11 @@ This command can be run as many times as you want.
 
 1. Add your logo by replacing the assets/images/logo.png file.
 
-   The logo has to be named logo.png and be in a 1:1 ratio (usually 512x512
+   The logo has to be named logo.png and be in a 1:1 ratio (usually 512×512
    pixels)
 
 1. In the root of your repository run the following command
 
-    ```
-    python3 scripts/repo.py ulogo
-    ```
+   ```shell
+   python3 scripts/repo.py ulogo
+   ```
