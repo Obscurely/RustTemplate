@@ -9,6 +9,14 @@ pkgs.mkShell {
     llvmPackages_latest.lld
     rustup
     rustc
+    cargo
+    rustfmt
+    clippy
+    cargo-audit # audit dependencies in order to scan for supply chain attacks 
+    cargo-fuzz # fuzzing tool
+    cargo-deny # tool to deny crates based on checks.
+    cargo-edit # manage cargo dependencies
+    cargo-deb # pkg rust apps for debian
     cmake
     git
     gcc

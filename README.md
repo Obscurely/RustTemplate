@@ -89,6 +89,7 @@
     <li><a href="#-security">🔰 Security</a></li>
     <li><a href="#-license">🪪 License</a></li>
     <li><a href="#-contact">📧 Contact</a></li>
+    <li><a href="#-template">📄 Template</a></li>
     <li><a href="#-acknowledgments">🦾 Acknowledgments</a></li>
   </ol>
 </details>
@@ -542,6 +543,10 @@ this email address if you have more to say:
 [CHANGEME_SMAIL](mailto:CHANGEME_SMAIL)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📄 Template
+
+This repository is based on this template [Obscurely/RustTemplate](https://github.com/Obscurely/RustTemplate)
 
 ## 🦾 Acknowledgments
 

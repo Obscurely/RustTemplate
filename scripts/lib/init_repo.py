@@ -1,5 +1,7 @@
 import os
 
+from update_logo import update_logo
+
 
 def init_repo(path_sep: str, cwd: str):
     # Directories we can ignore
@@ -112,3 +114,6 @@ def init_repo(path_sep: str, cwd: str):
             dir_split[-1] = dir_split[-1].replace("CHANGEME", vars["CHANGEME_NAME"])
             new_dir = path_sep.join(dir_split)
             os.rename(dir, new_dir)
+
+    # Run update logo to place the default logo in the project
+    update_logo(path_sep, cwd)
