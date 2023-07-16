@@ -80,7 +80,7 @@
    This will initialize the repository by replacing CHANGEME_NAME, CHANGEME_BIN,
    CHANGEME_USER, CHANGEME_PMAIL, CHANGEME_SMAIL placeholders in every file with
    the according values and rename all the folders & files that have a CHANGEME
-   tag aswell as converting and copying the default logo.png where needed.
+   tag as well as converting and copying the default logo.png where needed.
 
 ## Additional Resources
 

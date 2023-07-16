@@ -1,5 +1,15 @@
 # Fuzzing
 
+<!--toc:start-->
+- [Fuzzing](#fuzzing)
+  - [Usage](#usage)
+    - [Debugging a crash](#debugging-a-crash)
+  - [A brief introduction to fuzzers](#a-brief-introduction-to-fuzzers)
+  - [Each fuzzer harness in detail](#each-fuzzer-harness-in-detail)
+    - [`fuzz_target_1`](#fuzztarget1)
+  - [Acknowledgments](#acknowledgments)
+<!--toc:end-->
+
 [Fuzz testing](https://en.wikipedia.org/wiki/Fuzzing) is a software testing
 technique used to find security and stability issues by providing pseudo-random
 data as input to the software.

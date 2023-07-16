@@ -6,6 +6,8 @@
 **For proper use give a read**: [Features](template/FEATURES.md) &
 [Workflow](template/WORKFLOW.md)
 
+**Before first release**: you should read the rest
+
 - [How to Start](template/START.md) - Instructions on the first things you
   should do using this template
 - [Requirements](template/REQ.md) - Things you need to change to make this

@@ -1,6 +1,6 @@
 # Update the Description (short)
 
-**This section assumes you followed [How to Start](START.md) completly which you
+**This section assumes you followed [How to Start](START.md) completely which you
 should.**
 
 **!!! This command can only be run once, after that you'll have to change it

@@ -1,6 +1,6 @@
 # Update the Logo
 
-**This section assumes you followed [How to Start](START.md) completly which you
+**This section assumes you followed [How to Start](START.md) completley which you
 should.**
 
 This command can be run as many times as you want.
