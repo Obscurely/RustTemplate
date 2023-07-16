@@ -1,5 +1,21 @@
 # Extras
 
+<!--toc:start-->
+- [Extras](#extras)
+  - [Repository Settings](#repository-settings)
+    - [General Section](#general-section)
+      - [Social Preview](#social-preview)
+      - [Enable Wikis](#enable-wikis)
+      - [Sponsorships](#sponsorships)
+      - [Discussion](#discussion)
+    - [Branches section](#branches-section)
+      - [Branch protection rule](#branch-protection-rule)
+    - [Rules](#rules)
+      - [Rulesets](#rulesets)
+    - [Pages](#pages)
+    - [Code security and analysis](#code-security-and-analysis)
+<!--toc:end-->
+
 ## Repository Settings
 
 All of the following assume you are in the Settings page of your repository.
@@ -9,7 +25,7 @@ Just click settings on the toolbar up top on your repository page.
 
 #### Social Preview
 
-After [I](https://github.com/Obscurely)'ve got a respository about description,
+After [I](https://github.com/Obscurely)'ve got a repository about description,
 [I](https://github.com/Obscurely) like to generate a social preview with this
 [tool](https://www.bannerbear.com/demos/github-social-preview-generator-tool/),
 edit it to remove how many stars the repository has, so

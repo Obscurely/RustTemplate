@@ -5,7 +5,7 @@
 - [Requirements](#requirements)
   - [GitHub actions permissions](#github-actions-permissions)
   - [Version scheme](#version-scheme)
-  - [homebrew-tap repo](#homebrew-tap-repo)
+  - [homebrew-tap repo](#homebrew-tap)
   - [Action secrets](#action-secrets)
     - [API_TOKEN_GITHUB](#apitokengithub)
     - [AUR](#aur)
