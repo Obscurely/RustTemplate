@@ -1,5 +1,21 @@
 # Requirements
 
+<!--toc:start-->
+
+- [Requirements](#requirements)
+  - [GitHub actions permissions](#github-actions-permissions)
+  - [Version scheme](#version-scheme)
+  - [homebrew-tap repo](#homebrew-tap-repo)
+  - [Action secrets](#action-secrets)
+    - [API_TOKEN_GITHUB](#apitokengithub)
+    - [AUR](#aur)
+      - [AUR_USERNAME](#aurusername)
+      - [AUR_EMAIL](#auremail)
+      - [AUR_SSH_PRIVATE_KEY](#aursshprivatekey)
+    - [CRATES_TOKEN](#cratestoken)
+
+<!--toc:end-->
+
 All of the following have to be met in order for this template to work to its
 full potential and not encounter any issues. If you for example don't want to
 upload to the AUR just edit `.github/workflows/release.yml` accordingly.
@@ -13,16 +29,16 @@ selected. This is so the actions can create new releases.
 
 ## Version scheme
 
-You must use [semver](https://semver.org/). Every release you make should look
+You must use [SemVer](https://semver.org/). Every release you make should look
 something like this: `v0.1.0-stable` or `v0.1.0-beta`. Note, only stable
 releases will make external changes like updating AUR stable pkgs or homebrew
 pkg.
 
-## homebrew-tap repo
+## homebrew-tap repository
 
-You will need to have public repo on your account named `homebrew-tap`. When the
-you create a new stable release the GitHub actions will update/publish the
-homebrew version for macOS.
+You will need to have public repository on your account named `homebrew-tap`.
+When the you create a new stable release the GitHub actions will update/publish
+the homebrew version for macOS.
 
 ## Action secrets
 
