@@ -100,7 +100,7 @@ with following options:
 
 ### Pages
 
-The following are settings for the website hosted with the content from the
+The following are settings for the site hosted with the content from the
 `docs/` folder
 
 - Source: Deploy from a branch

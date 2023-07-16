@@ -5,14 +5,14 @@
 - [Requirements](#requirements)
   - [GitHub actions permissions](#github-actions-permissions)
   - [Version scheme](#version-scheme)
-  - [homebrew-tap repo](#homebrew-tap)
+  - [homebrew-tap repository](#homebrew-tap-repository)
   - [Action secrets](#action-secrets)
-    - [API_TOKEN_GITHUB](#apitokengithub)
+    - [API_TOKEN_GITHUB](#api_token_github)
     - [AUR](#aur)
-      - [AUR_USERNAME](#aurusername)
-      - [AUR_EMAIL](#auremail)
-      - [AUR_SSH_PRIVATE_KEY](#aursshprivatekey)
-    - [CRATES_TOKEN](#cratestoken)
+      - [AUR_USERNAME](#aur_username)
+      - [AUR_EMAIL](#aur_email)
+      - [AUR_SSH_PRIVATE_KEY](#aur_ssh_private_key)
+    - [CRATES_TOKEN](#crates_token)
 
 <!--toc:end-->
 
