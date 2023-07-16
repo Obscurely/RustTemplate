@@ -1,5 +1,8 @@
 # Template Documentaion
 
+**For this template to work with no changes make sure to choose a repository
+name that is not present on crates.io or in the AUR**
+
 **Required to follow**: [How to Start](template/START.md) &
 [Requirements](template/REQ.md)
 
@@ -22,5 +25,6 @@
   update the _short_ description.
 - [Manual Changes](template/MANUAL.md) - Things you have to change manually,
   like features of your project, **not required**
-- [Extras](template/EXTRAS.md) - Extra things to change if you wanna follow my
-  [Workflow](template/WORKFLOW.md), **not required**
+- [Extras](template/EXTRAS.md) - Extra things to change if you wanna follow
+  [my](https://github.com/Obscurely) [Workflow](template/WORKFLOW.md), **not
+  required**
