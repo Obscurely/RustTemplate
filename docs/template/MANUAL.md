@@ -7,7 +7,7 @@
     - [Categories (line 12)](#categories-line-12)
     - [Keywords (line 13)](#keywords-line-13)
     - [Debian section (line 27)](#debian-section-line-27)
-  - [README.md](#readmemd)
+  - [README](#readme)
     - [Project about (line 99)](#project-about-line-99)
     - [Features (line 107)](#features-line-107)
     - [Video showcase (line 113)](#video-showcase-line-113)
@@ -82,7 +82,7 @@ Advanced concepts a user might want to know to take full advantage of your app.
 
 ### Road map link (line 488)
 
-The id of the road map associated with your project on GitHub. If you don't have
+The ID of the road map associated with your project on GitHub. If you don't have
 one go to your repository page, click on _Projects_ up top and create a new one.
 
 ### FAQ (line 511)
