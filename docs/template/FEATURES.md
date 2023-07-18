@@ -4,17 +4,17 @@
 
 - [Features](#features)
   - [Automatic](#automatic)
-    - [GitHub](#github)
-    - [Rust](#rust)
+    - [GitHub automatic](#github-automatic)
+    - [Rust automatic](#rust-automatic)
   - [Static](#static)
-    - [GitHub](#github)
-    - [Rust](#rust)
+    - [GitHub static](#github-static)
+    - [Rust static](#rust-static)
 
 <!--toc:end-->
 
 ## Automatic
 
-### GitHub
+### GitHub automatic
 
 - Python script that automatically initializes the repository according to your
   username and project name
@@ -25,7 +25,7 @@
 - Automatically greeting users creating issues and PRs
 - Weekly scheduled Dependabot checks
 
-### Rust
+### Rust automatic
 
 - Automatic checks running on each push
   - Cargo deny
@@ -57,7 +57,7 @@
 
 ## Static
 
-### GitHub
+### GitHub static
 
 - Repository is under [MIT license](https://mit-license.org/)
 - One of the best READMEs for Rust projects (based on
@@ -73,7 +73,7 @@
 - SECURITY file
 - GitHub pages set up
 
-### Rust
+### Rust static
 
 - Cargo.toml fully configured
   - Complete information about package

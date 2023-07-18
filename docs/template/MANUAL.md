@@ -3,7 +3,7 @@
 <!--toc:start-->
 
 - [Manual Changes](#manual-changes)
-  - [.github/ISSUE_TEMPLATE/config.yml](#githubissuetemplateconfigyml)
+  - [GitHub Issue Template Config](#github-issue-template-config)
     - [Discord Server (line 7)](#discord-server-line-7)
     - [Email (line 12)](#email-line-12)
   - [Cargo.toml](#cargotoml)
@@ -24,7 +24,7 @@
 
 <!--toc:end-->
 
-## .github/ISSUE_TEMPLATE/config.yml
+## GitHub Issue Template Config
 
 ### Discord Server (line 7)
 
@@ -34,7 +34,7 @@ matrix. Discord would be preferred since is more used.
 ### Email (line 12)
 
 Ideally you should also have an email. Unfortunately GitHub doesn't let you put
-emails directly or mailto links so you have to use a website like the one I used
+emails directly or mailto links so you have to use a site like the one I used
 to generate a special link with your email.
 
 ## Cargo.toml

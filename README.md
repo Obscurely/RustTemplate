@@ -554,7 +554,7 @@ This repository is based on this template [Obscurely/RustTemplate](https://githu
 - [This Rust project template](https://github.com/rust-github/template/tree/main/template)
 - [This other Rust project template](https://github.com/vmchale/project-init)
 - [This general GitHub project template](https://github.com/maehr/github-template)
-- [This website full of the best Rust tools](https://blessed.rs/crates)
+- [This site full of the best Rust tools](https://blessed.rs/crates)
 - [Shields.io](https://shields.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
