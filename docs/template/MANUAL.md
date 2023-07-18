@@ -3,6 +3,9 @@
 <!--toc:start-->
 
 - [Manual Changes](#manual-changes)
+  - [.github/ISSUE_TEMPLATE/config.yml](#githubissuetemplateconfigyml)
+    - [Discord Server (line 7)](#discord-server-line-7)
+    - [Email (line 12)](#email-line-12)
   - [Cargo.toml](#cargotoml)
     - [Categories (line 12)](#categories-line-12)
     - [Keywords (line 13)](#keywords-line-13)
@@ -20,6 +23,19 @@
     - [Fuzz harnesses (line 65)](#fuzz-harnesses-line-65)
 
 <!--toc:end-->
+
+## .github/ISSUE_TEMPLATE/config.yml
+
+### Discord Server (line 7)
+
+Ideally you should have a link a server/group on something like discord on
+matrix. Discord would be preferred since is more used.
+
+### Email (line 12)
+
+Ideally you should also have an email. Unfortunately GitHub doesn't let you put
+emails directly or mailto links so you have to use a website like the one I used
+to generate a special link with your email.
 
 ## Cargo.toml
 

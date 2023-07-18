@@ -1,5 +1,11 @@
 # Template Documentaion
 
+This template works by using a set of CHANGEME tags across the whole repository
+and using a python script it changes all of those tags to match your repository,
+making it seem just as if you built everything from the ground up specifically
+for your project. For a full list of features this template has read
+[Features](template/FEATURES.md).
+
 **For this template to work with no changes make sure to choose a repository
 name that is not present on crates.io or in the AUR**
 
@@ -20,9 +26,9 @@ name that is not present on crates.io or in the AUR**
   template and what [I](https://github.com/Obscurely) think is the "best" way to
   program using RUST
 - [Update the Logo](template/UPDATE_LOGO.md) - Instructions on how to update the
-  logo.
+  logo using the provided script.
 - [Update the Description](template/UPDATE_DESC.md) - Instructions on how to
-  update the _short_ description.
+  update the _short_ description using the provided script.
 - [Manual Changes](template/MANUAL.md) - Things you have to change manually,
   like features of your project, **not required**
 - [Extras](template/EXTRAS.md) - Extra things to change if you wanna follow
