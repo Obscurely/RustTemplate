@@ -1,6 +1,7 @@
 # Extras
 
 <!--toc:start-->
+
 - [Extras](#extras)
   - [Repository Settings](#repository-settings)
     - [General Section](#general-section)
@@ -9,11 +10,14 @@
       - [Sponsorships](#sponsorships)
       - [Discussion](#discussion)
     - [Branches section](#branches-section)
-      - [Branch protection rule](#branch-protection-rule)
+      - [Branch protection rules](#branch-protection-rules) (required to follow
+        [my](https://github.com/Obscurely) Workflow)
     - [Rules](#rules)
-      - [Rulesets](#rulesets)
+      - [Rulesets](#rulesets) (required to follow
+        [my](https://github.com/Obscurely) Workflow)
     - [Pages](#pages)
     - [Code security and analysis](#code-security-and-analysis)
+
 <!--toc:end-->
 
 ## Repository Settings
@@ -52,7 +56,7 @@ this:
 
 ### Branches section
 
-#### Branch protection rule
+#### Branch protection rules
 
 In order to properly follow [my](https://github.com/Obscurely) workflow you will
 have to create a new rule with the following settings:
@@ -100,8 +104,8 @@ with following options:
 
 ### Pages
 
-The following are settings for the site hosted with the content from the
-`docs/` folder
+The following are settings for the site hosted with the content from the `docs/`
+folder
 
 - Source: Deploy from a branch
 - Branch: master & `docs/`

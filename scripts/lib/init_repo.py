@@ -1,6 +1,6 @@
 import os
 
-from update_logo import update_logo
+from lib.update_logo import update_logo
 
 
 def init_repo(path_sep: str, cwd: str):

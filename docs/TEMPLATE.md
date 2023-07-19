@@ -31,6 +31,6 @@ name that is not present on crates.io or in the AUR**
   update the _short_ description using the provided script.
 - [Manual Changes](template/MANUAL.md) - Things you have to change manually,
   like features of your project, **not required**
-- [Extras](template/EXTRAS.md) - Extra things to change if you wanna follow
-  [my](https://github.com/Obscurely) [Workflow](template/WORKFLOW.md) or just
-  make your repository better, **not required**
+- [Extras](template/EXTRAS.md) - Extra things to change if you wanna make your
+  repository better, **not required/just 2 sections if you want to follow
+  [my](https://github.com/Obscurely) [Workflow](template/WORKFLOW.md)**

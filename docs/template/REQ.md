@@ -90,7 +90,7 @@ paste your key in the secret box (second box).
 
 ### CRATES_TOKEN
 
-You'll a crates.io token for the following steps, if you don't have one:
+You'll need a crates.io token for the following steps, if you don't have one:
 
 1. Login on crates.io using GitHub.
 1. Go to [API tokens pages](https://crates.io/settings/tokens).
