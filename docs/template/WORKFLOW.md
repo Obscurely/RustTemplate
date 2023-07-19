@@ -55,13 +55,13 @@ remote - the target branch on GitHub
   staged
 - `git log --oneline` to nicely view the log of commits
 - `git ls-tree commit-id` to view what files a commit changed, where `commit-id`
-  is the id of the target commit or if you want the commit before the last one
+  is the ID of the target commit or if you want the commit before the last one
   use `HEAD~1` (can be a different number)
 - `git show HEAD~1:some_file` view the stage of a file in the commit before the
-  last commit, of course `HEAD~1` can be any commit id and you don't have to
+  last commit, of course `HEAD~1` can be any commit ID and you don't have to
   specify a file.
 - `git restore --source=HEAD~1 some_file` restore some_file to the state it was
-  in 2 commits ago, of course `HEAD~1` can be any commit id
+  in 2 commits ago, of course `HEAD~1` can be any commit ID
 - `git checkout -b next` create a new branch next and swtich to it
 - `git switch master` to switch back to master
 - `git diff next` to see the differences between the next branch and master
@@ -69,7 +69,7 @@ remote - the target branch on GitHub
 - `git revert HEAD~1` to revert to the changes made to 2 commits ago, you may
   encounter conflicts and have to do something like
   `git rm some_file && git revert --continue`, of course `HEAD~1` can be any
-  commit id.
+  commit ID.
 
 ## Project start
 
@@ -269,7 +269,7 @@ thing is adding the crates to your README
 Any time you have a crucial function that you want to make sure it works
 properly under any circumstances you will want to create a fuzz harness and run
 it for some time. For this you can read the README inside the fuzz folder and
-look at the example. Additionally there are a few youtube videos you can watch
+look at the example. Additionally there are a few YouTube videos you can watch
 about cargo-fuzz.
 
 ## Advice
@@ -301,5 +301,5 @@ One example of why you should do this is for example you are working on
 feature-x and then you suddenly find a bug or god forbids a vulnerability in
 your production code. What you can now do is create a new branch to fix that and
 merge it fast into master and make a new hot fix release while not having to
-commit any unfinished feature. Also you would merge that bug fix into your
+commit any unfinished feature. Also you would merge that bugfix into your
 feature branch as well (or not if you prefer).
