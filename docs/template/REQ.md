@@ -3,6 +3,7 @@
 <!--toc:start-->
 
 - [Requirements](#requirements)
+  - [Public GitHub repository](#public-github-repository)
   - [GitHub actions permissions](#github-actions-permissions)
   - [Version scheme](#version-scheme)
   - [homebrew-tap repository](#homebrew-tap-repository)
@@ -19,6 +20,11 @@
 All of the following have to be met in order for this template to work to its
 full potential and not encounter any issues. If you for example don't want to
 upload to the AUR just edit `.github/workflows/release.yml` accordingly.
+
+## Public GitHub repository
+
+For all of the actions, branch rules etc. to be available (if you are a free
+GitHub user) the repository has to be public.
 
 ## GitHub actions permissions
 

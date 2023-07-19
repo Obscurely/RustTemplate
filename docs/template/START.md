@@ -82,6 +82,13 @@
    the according values and rename all the folders & files that have a CHANGEME
    tag as well as converting and copying the default logo.png where needed.
 
+1. Finish by pushing your changes
+
+   ```shell
+   git commit -am "init repo"
+   git push
+   ```
+
 ## Additional Resources
 
 - [Update the Logo](UPDATE_LOGO.md)
