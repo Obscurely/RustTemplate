@@ -7,7 +7,6 @@ pkgs.mkShell {
     xorriso
     grub2
     llvmPackages_latest.lld
-    rustup
     rustc
     cargo
     rustfmt
