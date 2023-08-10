@@ -14,6 +14,7 @@ def init_repo(path_sep: str, cwd: str):
         f"{cwd}{path_sep}fuzz{path_sep}target",
         f"{cwd}{path_sep}scripts",
         f"{cwd}{path_sep}target",
+        f"{cwd}{path_sep}docs",
     ]
 
     # Get all the files we want to manipulate with their full paths.
