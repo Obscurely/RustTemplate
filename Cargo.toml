@@ -33,7 +33,7 @@ strip = true      # Automatically strip symbols from the binary.
 opt-level = 3     # Optimize for speed.
 lto = true        # instructs the linker to optimize at the link stage
 codegen-units = 1 # Default is 16, the higher the faster compile time, but it may produce slower code.
-panic = "abort"   # Since all of the errors are  handled manually (should be), aborting and removing the panic code is nothing, but an improvement.
+panic = "unwind"   # Since all of the errors are  handled manually (should be), aborting and removing the panic code is nothing, but an improvement.
 
 #═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 
@@ -48,16 +48,18 @@ embed-resource = "2.2.0"
 #   - serde and serde_json
 #   - reqwest
 #   - tokio
+#   - futures
 #   - regex
 #   - clap (fully-featured args parsing), pico-args (minimal args parsing)
 #   - chrono (date and time)
 #   - tempfile
 #   - dirs
 #   - indexmap
-#   - thiserror and thiserror (for error handling)
+#   - thiserror and anyerror (for error handling)
 #   - tracing (logging)
 #   - walkdir (recursively read a directory)
 #   - rayon (using .par_iter() it makes iters run in parallel)
 #   - slint (ui framework)
 #   - sled (high performance, written in rust, db)
 #   - itertools (for when extra iterator methods are needed)
+#   - crossterm
