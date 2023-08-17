@@ -148,9 +148,9 @@ If you've got any questions please give the [FAQ](#faq) a check.
 
 #### Portable EXE
 
-1. Go to the [Releases Tab](https://github.com/CHANGEME_USER/CHANGEME_NAME/releases)
-   and download the _CHANGEME_BIN-windows.exe_ file (might have to click show
-   all).
+1. Go to the
+   [Releases Tab](https://github.com/CHANGEME_USER/CHANGEME_NAME/releases) and
+   download the _CHANGEME_BIN-windows.exe_ file (might have to click show all).
 1. Double click the exe you just downloaded and there you go the program works.
 1. Might wanna take a look at the [Usage Tab](#-usage) if you don't understand
    something about it.
@@ -159,9 +159,10 @@ If you've got any questions please give the [FAQ](#faq) a check.
 
 #### Installer
 
-1. Go to the [Releases Tab](https://github.com/CHANGEME_USER/CHANGEME_NAME/releases)
-   and download the _CHANGEME_BIN-windows-installer.exe_ file (might have to
-   click show all).
+1. Go to the
+   [Releases Tab](https://github.com/CHANGEME_USER/CHANGEME_NAME/releases) and
+   download the _CHANGEME_BIN-windows-installer.exe_ file (might have to click
+   show all).
 1. Double click the installer and go through it as you would with any other
    installer.
 1. If you look now in the start menu (or on the desktop if you ticked create
@@ -186,8 +187,9 @@ If you've got any questions please give the [FAQ](#faq) a check.
 
 #### Portable Bin
 
-1. Go to the [Releases Tab](https://github.com/CHANGEME_USER/CHANGEME_NAME/releases)
-   and download the _CHANGEME_BIN-linux_ file.
+1. Go to the
+   [Releases Tab](https://github.com/CHANGEME_USER/CHANGEME_NAME/releases) and
+   download the _CHANGEME_BIN-linux_ file.
 1. Double click the bin you just downloaded and there you go the program works.
 1. Might wanna take a look at the [Usage Tab](#-usage) if you don't understand
    something about it.
@@ -199,8 +201,9 @@ If you've got any questions please give the [FAQ](#faq) a check.
 
 #### AppImage
 
-1. Go to the [Releases Tab](https://github.com/CHANGEME_USER/CHANGEME_NAME/releases)
-   and download the _CHANGEME_BIN-linux.AppImage_ file.
+1. Go to the
+   [Releases Tab](https://github.com/CHANGEME_USER/CHANGEME_NAME/releases) and
+   download the _CHANGEME_BIN-linux.AppImage_ file.
 1. Double click the AppImage you download and there you go the program just
    works. You may want to install
    [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher) if you
@@ -263,10 +266,9 @@ b. Manually cloning and building it from AUR
 
 #### Nix File
 
-You are using NixOS, don't worry I got you bro.
-
-1. Go to the [Releases Tab](https://github.com/CHANGEME_USER/CHANGEME_NAME/releases)
-   and download the _CHANGEME_BIN-linux.nix_ file.
+1. Go to the
+   [Releases Tab](https://github.com/CHANGEME_USER/CHANGEME_NAME/releases) and
+   download the _CHANGEME_BIN-linux.nix_ file.
 1. If you use flakes then put it in your pkgs folder, and up-top add your tag
    (like _my_). If you don't just add the code in your default.nix file and
    install it this way.
@@ -279,8 +281,9 @@ You should use the app image. This does not provide a desktop file, you'll have
 to run it from the command-line. It's here just as another means if needed. I
 will try to make a ppa eventually.
 
-1. Go to the [Releases Tab](https://github.com/CHANGEME_USER/CHANGEME_NAME/releases)
-   and download the _CHANGEME_BIN-linux.deb_ file.
+1. Go to the
+   [Releases Tab](https://github.com/CHANGEME_USER/CHANGEME_NAME/releases) and
+   download the _CHANGEME_BIN-linux.deb_ file.
 1. Open a terminal in the folder where your download is and run the following
    command:
 
@@ -311,8 +314,9 @@ will try to make a ppa eventually.
 
 #### Portable binary
 
-1. Go to the [Releases Tab](https://github.com/CHANGEME_USER/CHANGEME_NAME/releases)
-   and download the _CHANGEME_BIN-macos_ file.
+1. Go to the
+   [Releases Tab](https://github.com/CHANGEME_USER/CHANGEME_NAME/releases) and
+   download the _CHANGEME_BIN-macos_ file.
 1. Double click the bin you just downloaded and there you go the program works.
 1. Might wanna take a look at the [Usage Tab](#-usage) if you don't understand
    something about it.
@@ -324,8 +328,9 @@ will try to make a ppa eventually.
 Damn simillar to [portable binary](#portable-binary), only real difference is
 this has an icon.
 
-1. Go to the [Releases Tab](https://github.com/CHANGEME_USER/CHANGEME_NAME/releases)
-   and download the _CHANGEME_BIN-macos-app.tar.gz_ file.
+1. Go to the
+   [Releases Tab](https://github.com/CHANGEME_USER/CHANGEME_NAME/releases) and
+   download the _CHANGEME_BIN-macos-app.tar.gz_ file.
 1. Use your archive manager or run in the terminal the following command:
 
    ```shell
@@ -341,8 +346,9 @@ this has an icon.
 
 Works just like any other dmg installer you've used.
 
-1. Go to the [Releases Tab](https://github.com/CHANGEME_USER/CHANGEME_NAME/releases)
-   and download the _CHANGEME_BIN-macos-installer.dmg_ file.
+1. Go to the
+   [Releases Tab](https://github.com/CHANGEME_USER/CHANGEME_NAME/releases) and
+   download the _CHANGEME_BIN-macos-installer.dmg_ file.
 1. Double click to run the dmg.
 1. Drag the app folder over the _Applications_ folder.
 1. Done, you've just installed the app, should see it in launchpad now.
@@ -389,8 +395,8 @@ This method will work across any Linux distribution, Windows 10/11 and macOS
 
 1. Install rust, either using the official
    [rustup installer](https://www.rust-lang.org/tools/install) or any pkg
-   manager you may use. (There is also a shell.nix file in the repository if you
-   use nix)
+   manager you may use. (There is also a shell.nix and a flake.nix in the
+   repository if you use nix)
 1. Run the following command in your terminal of choice:
 
    ```shell
@@ -429,8 +435,8 @@ This method will work across any Linux distribution, Windows 10/11 and macOS
 This program only uses cross platform libraries. The following steps require
 that you have rust installed, check their official
 [installation page](https://www.rust-lang.org/tools/install) or use any pkg
-manager you may want. (There is also a shell.nix file in the repository if you
-use nix).
+manager you may want. (There is also a shell.nix and a flake.nix in the
+repository if you use nix).
 
 1. Clone this repository on your PC, you can use "git clone", if you have git
    installed, like this:
@@ -523,8 +529,8 @@ CHANGEME_NAME is following [Semantic Versioning 2.0](https://semver.org/).
 
 ## 🔰 Security
 
-If you happen to find any issues please carefully read [SECURITY.md](SECURITY.md)
-and strictly follow everything stated.
+If you happen to find any issues please carefully read
+[SECURITY.md](SECURITY.md) and strictly follow everything stated.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -538,15 +544,16 @@ have fun :)
 ## 📧 Contact
 
 Either post an issue in the
-[Issues Tab](https://github.com/CHANGEME_USER/CHANGEME_NAME/issues) or contact me at
-this email address if you have more to say:
+[Issues Tab](https://github.com/CHANGEME_USER/CHANGEME_NAME/issues) or contact
+me at this email address if you have more to say:
 [CHANGEME_SMAIL](mailto:CHANGEME_SMAIL)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📄 Template
 
-This repository is based on this template [Obscurely/RustTemplate](https://github.com/Obscurely/RustTemplate)
+This repository is based on this template
+[Obscurely/RustTemplate](https://github.com/Obscurely/RustTemplate)
 
 ## 🦾 Acknowledgments
 
