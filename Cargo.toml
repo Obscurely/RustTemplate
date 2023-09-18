@@ -63,3 +63,6 @@ embed-resource = "2.3.0"
 #   - sled (high performance, written in rust, db)
 #   - itertools (for when extra iterator methods are needed)
 #   - crossterm
+#   - dashmap (hashmap to use in concurrent environments)
+#   - smallvec (vector that allocater on the stack)
+#   - crossbeam (tools for concurrent programming)
