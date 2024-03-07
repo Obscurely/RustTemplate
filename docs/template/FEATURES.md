@@ -87,4 +87,4 @@
 - Cargo-fuzz set up with a special README & an example
 - Rust build file that integrates the logo into the Windows binary
 - Rust integration & unit test examples
-- Shell.nix file for nix users with everything needed
+- Shell.nix and flake.nix files for nix users with everything needed

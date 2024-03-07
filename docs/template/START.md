@@ -35,10 +35,20 @@
      sudo pacman -Sy python3
      ```
 
-     or if you are on NixOS just do the following and skip the next step
+     or if you are on NixOS or have nix installed just do the following and skip
+     the next step (installing pip)
+
+     if you don't have flakes
 
      ```shell
      nix-shell
+     ```
+
+     if you have flakes (this will grab the latest rust version)
+
+     ```shell
+     nix develop
+     nix flake update # when you want to update the rust version
      ```
 
    - On macOS

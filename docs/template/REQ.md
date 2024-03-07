@@ -21,6 +21,31 @@ All of the following have to be met in order for this template to work to its
 full potential and not encounter any issues. If you for example don't want to
 upload to the AUR just edit `.github/workflows/release.yml` accordingly.
 
+## Dependencies
+
+There are a few programs you should have installed in order to use this template
+**if you don't use NixOS or nix**. Check their documentations if you have
+trouble installing them. Essentially on Linux you use your pkg manager and on
+Windows `cargo install` for everything but git and rust.
+
+Bare minimum:
+
+- The Rust suite (rustc, cargo, rustfmt and clippy)
+- Git (obviously)
+- Openssl (already available on Windows, macOS and on most Linux distributions)
+- Pkg-config (Linux only)
+
+Required (for all the template features):
+
+- cargo-fuzz (for fuzzing)
+- cargo-deny (to check if crates meet criteria)
+
+Optional:
+
+- cargo-audit (to check for crate vulnerabilities)
+- cargo-edit (manage dependencies)
+- cargo-deb (build deb pkg locally)
+
 ## Public GitHub repository
 
 For all of the actions, branch rules etc. to be available (if you are a free
