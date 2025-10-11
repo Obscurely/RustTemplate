@@ -7,6 +7,8 @@ on:
     branches: ["**"]
 env:
   CARGO_TERM_COLOR: always
+permissions:
+  contents: read
 jobs:
   cargo-deny:
     name: Cargo Deny
@@ -70,6 +72,7 @@ jobs:
           VALIDATE_RUST_2015: false
           VALIDATE_RUST_CLIPPY: false
           VALIDATE_RUBY: false
+          VALIDATE_PYTHON_PYLINT: false
           FILTER_REGEX_EXCLUDE: "README.md"
           DEFAULT_BRANCH: "master"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

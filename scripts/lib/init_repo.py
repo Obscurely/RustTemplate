@@ -1,6 +1,7 @@
 import os
 
 from lib.update_logo import update_logo
+from lib.utils import get_target_files, parse_git_repo_info
 
 
 def init_repo(path_sep: str, cwd: str):
@@ -18,36 +19,10 @@ def init_repo(path_sep: str, cwd: str):
     ]
 
     # Get all the files we want to manipulate with their full paths.
-    target_files = []
-
-    for path, _, files in os.walk(cwd):
-        stop = 0
-        for dir in skip_dirs:
-            if dir in path:
-                stop = 1
-                continue
-
-        if stop == 1:
-            continue
-
-        for file in files:
-            if (
-                file != "Cargo.lock"
-                and ".png" not in file
-                and ".ico" not in file
-                and ".icns" not in file
-            ):
-                target_files.append(os.path.join(path, file))
+    target_files = get_target_files(cwd, path_sep)
 
     # Get user name and repo name
-    repo_name = ""
-    user_name = ""
-    with open(f"{cwd}{path_sep}.git{path_sep}config", "r") as f:
-        content = f.read()
-        user_name = content.split("url = https://github.com/")[1].split("/")[0]
-        repo_name = content.split(f"url = https://github.com/{user_name}/")[1].split(
-            "\n"
-        )[0]
+    user_name, repo_name = parse_git_repo_info(cwd, path_sep)
 
     # Get primary email address
     pmail = ""
@@ -84,10 +59,10 @@ def init_repo(path_sep: str, cwd: str):
     # Get all dirs list to rename the ones needed
     target_dirs = []
 
-    for path, dirs, files in os.walk(cwd):
+    for path, dirs, _ in os.walk(cwd):
         stop = 0
         for dir in skip_dirs:
-            if dir in path:
+            if dir in path and ".github" not in path:
                 stop = 1
                 continue
 

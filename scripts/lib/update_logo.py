@@ -1,20 +1,14 @@
 import glob
 import shutil
 
+from lib.utils import parse_git_repo_info
 from PIL import Image
 
 
 def update_logo(path_sep: str, cwd: str):
-    # Get bin name
-    bin_name = ""
-    with open(f"{cwd}{path_sep}.git{path_sep}config", "r") as f:
-        content = f.read()
-        user_name = content.split("url = https://github.com/")[1].split("/")[0]
-        bin_name = (
-            content.split(f"url = https://github.com/{user_name}/")[1]
-            .split("\n")[0]
-            .lower()
-        )
+    # Get bin name from git config
+    _, repo_name = parse_git_repo_info(cwd, path_sep)
+    bin_name = repo_name.lower()
 
     # Open base logo png file
     logo = Image.open(f"assets{path_sep}images{path_sep}logo.png")
