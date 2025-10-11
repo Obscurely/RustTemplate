@@ -2,7 +2,7 @@
 assets:
   - any: ["assets/**"]
 repo:
-  - "*"
+  - any: ["*"]
 resources:
   - any: ["resources/**"]
 source:
