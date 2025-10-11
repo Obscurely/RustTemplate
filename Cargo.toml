@@ -2,8 +2,8 @@
 name = "changeme_bin"
 authors = ["CHANGEME_USER <CHANGEME_PMAIL>"]
 version = "0.1.0"
-edition = "2021"
-rust-version = "1.69"                                                              # Minimum rust version
+edition = "2024"
+rust-version = "1.90"                                                              # Minimum rust version
 resolver = "2"
 description = "CHANGEME_DESC"
 documentation = "https://github.com/CHANGEME_USER/CHANGEME_NAME/blob/master/README.md"
@@ -19,7 +19,7 @@ build = "build.rs"
 
 [package.metadata.deb]
 maintainer = "CHANGEME_USER <CHANGEME_PMAIL>"
-copyright = "2023, 2023 <CHANGEME_PMAIL>"
+copyright = "2025, 2025 <CHANGEME_PMAIL>"
 license-file = ["LICENSE", "0"]
 extended-description = """\
 CHANGEME_DESC""""
@@ -38,7 +38,7 @@ panic = "unwind"   # Since all of the errors are  handled manually (should be), 
 #═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 
 [target.'cfg(windows)'.build-dependencies]
-embed-resource = "2.4.1"
+embed-resource = "3.0.6"
 
 #═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 
