@@ -1,5 +1,7 @@
 import os
 
+from lib.utils import get_target_files
+
 
 def update_desc(path_sep: str, cwd: str):
     # Load desc
@@ -20,26 +22,7 @@ def update_desc(path_sep: str, cwd: str):
     ]
 
     # Get all the files we want to manipulate with their full paths.
-    target_files = []
-
-    for path, _, files in os.walk(cwd):
-        stop = 0
-        for dir in skip_dirs:
-            if dir in path and ".github" not in path:
-                stop = 1
-                continue
-
-        if stop == 1:
-            continue
-
-        for file in files:
-            if (
-                file != "Cargo.lock"
-                and ".png" not in file
-                and ".ico" not in file
-                and ".icns" not in file
-            ):
-                target_files.append(os.path.join(path, file))
+    target_files = get_target_files(cwd, path_sep)
 
     for file in target_files:
         content = ""
