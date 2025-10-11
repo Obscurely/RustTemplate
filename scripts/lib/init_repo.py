@@ -23,7 +23,7 @@ def init_repo(path_sep: str, cwd: str):
     for path, _, files in os.walk(cwd):
         stop = 0
         for dir in skip_dirs:
-            if dir in path:
+            if dir in path and ".github" not in path:
                 stop = 1
                 continue
 
@@ -44,10 +44,31 @@ def init_repo(path_sep: str, cwd: str):
     user_name = ""
     with open(f"{cwd}{path_sep}.git{path_sep}config", "r") as f:
         content = f.read()
-        user_name = content.split("url = https://github.com/")[1].split("/")[0]
-        repo_name = content.split(f"url = https://github.com/{user_name}/")[1].split(
-            "\n"
-        )[0]
+        # Try HTTPS format first
+        if "url = https://github.com/" in content:
+            try:
+                user_name = content.split("url = https://github.com/")[1].split("/")[0]
+                repo_name = content.split(f"url = https://github.com/{user_name}/")[
+                    1
+                ].split("\n")[0]
+            except IndexError:
+                pass
+
+        # Try SSH format if HTTPS didn't work
+        elif "url = git@github.com:" in content:
+            try:
+                user_name = content.split("url = git@github.com:")[1].split("/")[0]
+                repo_name = content.split(f"url = git@github.com:{user_name}/")[
+                    1
+                ].split("\n")[0]
+            except IndexError:
+                pass
+
+        # If neither format worked, provide fallback or raise error
+        if not user_name or not repo_name or user_name == "" or repo_name == "":
+            raise ValueError(
+                "Could not parse GitHub repository information from .git/config"
+            )
 
     # Get primary email address
     pmail = ""
@@ -87,7 +108,7 @@ def init_repo(path_sep: str, cwd: str):
     for path, dirs, files in os.walk(cwd):
         stop = 0
         for dir in skip_dirs:
-            if dir in path:
+            if dir in path and ".github" not in path:
                 stop = 1
                 continue
 

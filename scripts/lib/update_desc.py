@@ -25,7 +25,7 @@ def update_desc(path_sep: str, cwd: str):
     for path, _, files in os.walk(cwd):
         stop = 0
         for dir in skip_dirs:
-            if dir in path:
+            if dir in path and ".github" not in path:
                 stop = 1
                 continue
 

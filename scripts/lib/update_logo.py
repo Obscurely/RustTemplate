@@ -5,16 +5,41 @@ from PIL import Image
 
 
 def update_logo(path_sep: str, cwd: str):
-    # Get bin name
+    # Get bin name from git config
     bin_name = ""
     with open(f"{cwd}{path_sep}.git{path_sep}config", "r") as f:
         content = f.read()
-        user_name = content.split("url = https://github.com/")[1].split("/")[0]
-        bin_name = (
-            content.split(f"url = https://github.com/{user_name}/")[1]
-            .split("\n")[0]
-            .lower()
-        )
+
+        # Try HTTPS format first
+        if "url = https://github.com/" in content:
+            try:
+                user_name = content.split("url = https://github.com/")[1].split("/")[0]
+                bin_name = content.split(f"url = https://github.com/{user_name}/")[
+                    1
+                ].split("\n")[0]
+            except IndexError:
+                pass
+
+        # Try SSH format if HTTPS didn't work
+        elif "url = git@github.com:" in content:
+            try:
+                user_name = content.split("url = git@github.com:")[1].split("/")[0]
+                bin_name = content.split(f"url = git@github.com:{user_name}/")[1].split(
+                    "\n"
+                )[0]
+            except IndexError:
+                pass
+
+        # Remove .git suffix if present
+        if bin_name.endswith(".git"):
+            bin_name = bin_name[:-4]
+
+        # Convert to lowercase for binary name
+        bin_name = bin_name.lower()
+
+        # If we couldn't parse the name, raise an error
+        if not bin_name:
+            raise ValueError("Could not parse repository name from .git/config")
 
     # Open base logo png file
     logo = Image.open(f"assets{path_sep}images{path_sep}logo.png")
