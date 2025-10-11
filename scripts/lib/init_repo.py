@@ -38,6 +38,7 @@ def init_repo(path_sep: str, cwd: str):
     vars = {
         "CHANGEME_USER": user_name,
         "CHANGEME_NAME": repo_name,
+        "CHANGEME_NAME_UPPER": repo_name.capitalize(),
         "CHANGEME_BIN": repo_name.lower(),
         "changeme_bin": repo_name.lower(),
         "CHANGEME_PMAIL": pmail,
