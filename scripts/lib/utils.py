@@ -44,10 +44,10 @@ def parse_git_repo_info(cwd: str, path_sep: str) -> Tuple[str, str]:
     """Parse GitHub repository information from .git/config file."""
     repo_name = ""
     user_name = ""
-    
+
     with open(f"{cwd}{path_sep}.git{path_sep}config", "r") as f:
         content = f.read()
-        
+
         # Try HTTPS format first
         if "url = https://github.com/" in content:
             try:
